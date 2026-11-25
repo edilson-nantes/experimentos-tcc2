@@ -1,0 +1,29 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Importância por impureza e por permutação — Árvore de Decisão, cenário \textit{Light}}
+  \label{tab:importancia_light_DT}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lcccc}
+    \hline
+    Característica & Impureza (Original) & Permutação (Original) & Impureza (SMOTE-NC) & Permutação (SMOTE-NC) \\
+    \hline
+    longest\_word & 0,9617 $\pm$ 0,0009 & 0,0592 $\pm$ 0,0075 & 0,9531 $\pm$ 0,0029 & 0,0644 $\pm$ 0,0090 \\
+    len & 0,0097 $\pm$ 0,0004 & 0,0442 $\pm$ 0,0075 & 0,0031 $\pm$ 0,0018 & 0,0409 $\pm$ 0,0047 \\
+    sld & 0,0012 $\pm$ 0,0001 & 0,0398 $\pm$ 0,0028 & 0,0023 $\pm$ 0,0027 & 0,0497 $\pm$ 0,0151 \\
+    FQDN\_count & 0,0002 $\pm$ 0,0002 & 0,0183 $\pm$ 0,0233 & 0,0002 $\pm$ 0,0001 & 0,0356 $\pm$ 0,0201 \\
+    entropy & 0,0018 $\pm$ 0,0004 & 0,0096 $\pm$ 0,0071 & 0,0007 $\pm$ 0,0001 & 0,0117 $\pm$ 0,0054 \\
+    lower & 0,0014 $\pm$ 0,0025 & 0,0088 $\pm$ 0,0160 & 0,0015 $\pm$ 0,0029 & 0,0077 $\pm$ 0,0164 \\
+    numeric & 0,0014 $\pm$ 0,0026 & 0,0075 $\pm$ 0,0101 & 0,0015 $\pm$ 0,0030 & 0,0271 $\pm$ 0,0309 \\
+    labels\_max & 0,0002 $\pm$ 0,0001 & 0,0065 $\pm$ 0,0130 & 0,0001 $\pm$ 0,0001 & 0,0001 $\pm$ 0,0001 \\
+    special & 0,0085 $\pm$ 0,0032 & 0,0026 $\pm$ 0,0014 & 0,0073 $\pm$ 0,0038 & 0,0036 $\pm$ 0,0043 \\
+    labels\_average & 0,0002 $\pm$ 0,0002 & 0,0026 $\pm$ 0,0053 & 0,0001 $\pm$ 0,0001 & 0,0044 $\pm$ 0,0078 \\
+    subdomain\_length & 0,0122 $\pm$ 0,0007 & 0,0022 $\pm$ 0,0008 & 0,0271 $\pm$ 0,0015 & 0,0063 $\pm$ 0,0072 \\
+    labels & 0,0015 $\pm$ 0,0024 & 0,0005 $\pm$ 0,0008 & 0,0032 $\pm$ 0,0047 & 0,0015 $\pm$ 0,0015 \\
+    upper & 0,0000 $\pm$ 0,0000 & 0,0001 $\pm$ 0,0002 & 0,0000 $\pm$ 0,0000 & -0,0000 $\pm$ 0,0000 \\
+    subdomain & 0,0000 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0000 & -0,0000 $\pm$ 0,0000 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão entre as sementes. Impureza: redução média de impureza (Gini). Permutação: queda da PR-AUC ao embaralhar a característica (10 repetições por semente); valores negativos ou próximos de zero indicam que a característica não é usada. Correlação de Spearman entre os dois ordenamentos: 0,44 (Original) e 0,53 (SMOTE-NC). Fonte: Autoria própria (2026).}
+\end{table}

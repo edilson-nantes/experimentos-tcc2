@@ -1,0 +1,28 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Generalização entre cenários}
+  \label{tab:cruzado}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccccc}
+    \hline
+    Treino $\rightarrow$ teste & Configuração & Ataque no teste & Precisão & Sensibilidade & F1 & PR-AUC & ROC-AUC & F1 na origem \\
+    \hline
+    \textit{Heavy} $\rightarrow$ \textit{Light} & Árvore de Decisão / Original & 0,4148 $\pm$ 0,0000 & 0,6445 $\pm$ 0,0007 & 0,9996 $\pm$ 0,0001 & 0,7837 $\pm$ 0,0005 & 0,6440 $\pm$ 0,0020 & 0,8041 $\pm$ 0,0012 & 0,7539 $\pm$ 0,0004 \\
+     & Árvore de Decisão / SMOTE-NC & 0,4148 $\pm$ 0,0000 & 0,6447 $\pm$ 0,0000 & 0,9995 $\pm$ 0,0001 & 0,7838 $\pm$ 0,0000 & 0,6450 $\pm$ 0,0002 & 0,8049 $\pm$ 0,0002 & 0,7545 $\pm$ 0,0008 \\
+     & \textit{Random Forest} / Original & 0,4148 $\pm$ 0,0000 & 0,6448 $\pm$ 0,0000 & 0,9993 $\pm$ 0,0000 & 0,7838 $\pm$ 0,0000 & 0,6450 $\pm$ 0,0001 & 0,8047 $\pm$ 0,0001 & 0,7544 $\pm$ 0,0008 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,4148 $\pm$ 0,0000 & 0,6448 $\pm$ 0,0000 & 0,9997 $\pm$ 0,0000 & 0,7840 $\pm$ 0,0000 & 0,6449 $\pm$ 0,0002 & 0,8046 $\pm$ 0,0000 & 0,7546 $\pm$ 0,0008 \\
+     & Tabela de consulta (limiar 0,5) & 0,4148 $\pm$ 0,0000 & 0,6448 $\pm$ 0,0000 & 0,9996 $\pm$ 0,0001 & 0,7840 $\pm$ 0,0000 & 0,6451 $\pm$ 0,0001 & 0,8047 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 \\
+     & Tabela de consulta (limiar do treino) & 0,4148 $\pm$ 0,0000 & 0,6448 $\pm$ 0,0000 & 0,9997 $\pm$ 0,0000 & 0,7840 $\pm$ 0,0000 & 0,6451 $\pm$ 0,0001 & 0,8047 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 \\
+    \hline
+    \textit{Light} $\rightarrow$ \textit{Heavy} & Árvore de Decisão / Original & 0,5805 $\pm$ 0,0000 & 0,7091 $\pm$ 0,1457 & 0,0001 $\pm$ 0,0000 & 0,0002 $\pm$ 0,0000 & 0,7730 $\pm$ 0,0033 & 0,7972 $\pm$ 0,0026 & 0,0003 $\pm$ 0,0003 \\
+     & Árvore de Decisão / SMOTE-NC & 0,5805 $\pm$ 0,0000 & 0,7708 $\pm$ 0,0103 & 0,9983 $\pm$ 0,0001 & 0,8699 $\pm$ 0,0066 & 0,7742 $\pm$ 0,0027 & 0,7984 $\pm$ 0,0023 & 0,4252 $\pm$ 0,0037 \\
+     & \textit{Random Forest} / Original & 0,5805 $\pm$ 0,0000 & 0,6121 $\pm$ 0,4270 & 0,0000 $\pm$ 0,0000 & 0,0001 $\pm$ 0,0001 & 0,7760 $\pm$ 0,0003 & 0,8000 $\pm$ 0,0002 & 0,0000 $\pm$ 0,0001 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,5805 $\pm$ 0,0000 & 0,7761 $\pm$ 0,0000 & 0,9981 $\pm$ 0,0000 & 0,8732 $\pm$ 0,0000 & 0,7759 $\pm$ 0,0002 & 0,7999 $\pm$ 0,0002 & 0,4268 $\pm$ 0,0009 \\
+     & Tabela de consulta (limiar 0,5) & 0,5805 $\pm$ 0,0000 & 0,8922 $\pm$ 0,0519 & 0,0001 $\pm$ 0,0000 & 0,0002 $\pm$ 0,0000 & 0,7759 $\pm$ 0,0003 & 0,7996 $\pm$ 0,0002 & 0,0003 $\pm$ 0,0003 \\
+     & Tabela de consulta (limiar do treino) & 0,5805 $\pm$ 0,0000 & 0,7760 $\pm$ 0,0000 & 0,9971 $\pm$ 0,0002 & 0,8728 $\pm$ 0,0001 & 0,7759 $\pm$ 0,0003 & 0,7996 $\pm$ 0,0002 & 0,4269 $\pm$ 0,0009 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Modelos treinados como no experimento principal (mesma divisão e mesmas sementes) e testados na base experimental do outro cenário, sem os arquivos benign\_1 e benign\_2, que pertencem aos dois cenários. F1 na origem: teste do próprio cenário de treino. Fonte: Autoria própria (2026).}
+\end{table}

@@ -1,0 +1,20 @@
+% Gerado por 08_tabelas_figuras_tcc.py. Requer \usepackage{graphicx}.
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Linha de referência (tabela de consulta) no conjunto de teste}
+  \label{tab:referencia}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccc}
+    \hline
+    Cenário & Limiar & Precisão & Sensibilidade & F1 & PR-AUC & ROC-AUC \\
+    \hline
+    \textit{Light} & 0,5 & 0,5267 $\pm$ 0,3919 & 0,0001 $\pm$ 0,0001 & 0,0003 $\pm$ 0,0003 & 0,2696 $\pm$ 0,0008 & 0,7949 $\pm$ 0,0006 \\
+     & Ajustado no treino & 0,2715 $\pm$ 0,0007 & 0,9989 $\pm$ 0,0003 & 0,4269 $\pm$ 0,0009 & 0,2696 $\pm$ 0,0008 & 0,7949 $\pm$ 0,0006 \\
+    \hline
+    \textit{Heavy} & 0,5 & 0,6060 $\pm$ 0,0011 & 0,9996 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 & 0,6067 $\pm$ 0,0016 & 0,7970 $\pm$ 0,0011 \\
+     & Ajustado no treino & 0,6059 $\pm$ 0,0010 & 0,9998 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 & 0,6067 $\pm$ 0,0016 & 0,7970 $\pm$ 0,0011 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições, com as mesmas divisões 70/30 e sementes do experimento principal. Fonte: Autoria própria (2026).}
+\end{table}

@@ -1,0 +1,20 @@
+% Gerado por 08_tabelas_figuras_tcc.py. Requer \usepackage{graphicx}.
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{\textit{Random Forest} com e sem a característica \texttt{sld}}
+  \label{tab:sem_sld}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccccc}
+    \hline
+    Cenário & Configuração & F1 (14) & F1 (sem \texttt{sld}) & PR-AUC (14) & PR-AUC (sem \texttt{sld}) & ROC-AUC (14) & ROC-AUC (sem \texttt{sld}) \\
+    \hline
+    \textit{Light} & Original & 0,0000 & 0,0000 & 0,2697 & 0,2694 & 0,7948 & 0,7948 \\
+     & SMOTE-NC & 0,4268 & 0,4268 & 0,2696 & 0,2697 & 0,7950 & 0,7950 \\
+    \hline
+    \textit{Heavy} & Original & 0,7544 & 0,7544 & 0,6065 & 0,6064 & 0,7969 & 0,7969 \\
+     & SMOTE-NC & 0,7546 & 0,7546 & 0,6064 & 0,6064 & 0,7968 & 0,7968 \\
+    \hline
+  \end{tabular}}
+  \legend{Média de 5 repetições, com as mesmas divisões e sementes do experimento principal. Fonte: Autoria própria (2026).}
+\end{table}

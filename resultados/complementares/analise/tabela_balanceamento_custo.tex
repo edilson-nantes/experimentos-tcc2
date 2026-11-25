@@ -1,0 +1,40 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Custo computacional do balanceamento e do ajuste do limiar (segundos)}
+  \label{tab:balanceamento_custo}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lllcccc}
+    \hline
+    Cenário & Modelo & Balanceamento & SMOTE-NC (s) & Treino (s) & Ajuste do limiar (s) & Predição (s) \\
+    \hline
+    \textit{Light} & Árvore de Decisão & Original & 0,000 $\pm$ 0,000 & 0,673 $\pm$ 0,045 & -- & 0,144 $\pm$ 0,002 \\
+     & Árvore de Decisão & SMOTE-NC & 4,161 $\pm$ 0,032 & 0,798 $\pm$ 0,022 & -- & 0,144 $\pm$ 0,002 \\
+     & Árvore de Decisão & \textit{class\_weight} & 0,000 $\pm$ 0,000 & 0,793 $\pm$ 0,056 & -- & 0,142 $\pm$ 0,002 \\
+     & Árvore de Decisão & Original & 0,000 $\pm$ 0,000 & 0,668 $\pm$ 0,032 & 3,180 $\pm$ 0,101 & 0,141 $\pm$ 0,001 \\
+     & Árvore de Decisão & SMOTE-NC & 4,116 $\pm$ 0,019 & 0,781 $\pm$ 0,037 & 20,388 $\pm$ 0,151 & 0,141 $\pm$ 0,001 \\
+     & Árvore de Decisão & \textit{class\_weight} & 0,000 $\pm$ 0,000 & 0,813 $\pm$ 0,052 & 3,525 $\pm$ 0,114 & 0,141 $\pm$ 0,001 \\
+     & \textit{Random Forest} & Original & 0,000 $\pm$ 0,000 & 2,112 $\pm$ 0,053 & -- & 0,209 $\pm$ 0,016 \\
+     & \textit{Random Forest} & SMOTE-NC & 4,131 $\pm$ 0,028 & 3,259 $\pm$ 0,106 & -- & 0,224 $\pm$ 0,027 \\
+     & \textit{Random Forest} & \textit{class\_weight} & 0,000 $\pm$ 0,000 & 2,116 $\pm$ 0,050 & -- & 0,199 $\pm$ 0,009 \\
+     & \textit{Random Forest} & Original & 0,000 $\pm$ 0,000 & 2,122 $\pm$ 0,078 & 8,139 $\pm$ 0,205 & 0,203 $\pm$ 0,009 \\
+     & \textit{Random Forest} & SMOTE-NC & 4,125 $\pm$ 0,026 & 3,341 $\pm$ 0,136 & 29,210 $\pm$ 0,192 & 0,209 $\pm$ 0,006 \\
+     & \textit{Random Forest} & \textit{class\_weight} & 0,000 $\pm$ 0,000 & 2,132 $\pm$ 0,048 & 8,176 $\pm$ 0,183 & 0,210 $\pm$ 0,019 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão & Original & 0,000 $\pm$ 0,000 & 1,700 $\pm$ 0,139 & -- & 0,236 $\pm$ 0,004 \\
+     & Árvore de Decisão & SMOTE-NC & 6,062 $\pm$ 0,020 & 1,446 $\pm$ 0,029 & -- & 0,234 $\pm$ 0,003 \\
+     & Árvore de Decisão & \textit{class\_weight} & 0,000 $\pm$ 0,000 & 2,175 $\pm$ 0,089 & -- & 0,235 $\pm$ 0,003 \\
+     & Árvore de Decisão & Original & 0,000 $\pm$ 0,000 & 1,710 $\pm$ 0,123 & 7,945 $\pm$ 0,539 & 0,234 $\pm$ 0,002 \\
+     & Árvore de Decisão & SMOTE-NC & 6,041 $\pm$ 0,052 & 1,433 $\pm$ 0,051 & 30,740 $\pm$ 0,144 & 0,233 $\pm$ 0,008 \\
+     & Árvore de Decisão & \textit{class\_weight} & 0,000 $\pm$ 0,000 & 2,124 $\pm$ 0,101 & 9,052 $\pm$ 0,427 & 0,232 $\pm$ 0,002 \\
+     & \textit{Random Forest} & Original & 0,000 $\pm$ 0,000 & 10,967 $\pm$ 0,181 & -- & 0,454 $\pm$ 0,006 \\
+     & \textit{Random Forest} & SMOTE-NC & 6,071 $\pm$ 0,019 & 12,355 $\pm$ 1,068 & -- & 0,455 $\pm$ 0,013 \\
+     & \textit{Random Forest} & \textit{class\_weight} & 0,000 $\pm$ 0,000 & 13,104 $\pm$ 0,167 & -- & 0,457 $\pm$ 0,015 \\
+     & \textit{Random Forest} & Original & 0,000 $\pm$ 0,000 & 11,315 $\pm$ 0,177 & 43,108 $\pm$ 0,473 & 0,446 $\pm$ 0,020 \\
+     & \textit{Random Forest} & SMOTE-NC & 6,037 $\pm$ 0,022 & 12,982 $\pm$ 1,096 & 71,402 $\pm$ 0,283 & 0,448 $\pm$ 0,007 \\
+     & \textit{Random Forest} & \textit{class\_weight} & 0,000 $\pm$ 0,000 & 13,101 $\pm$ 0,121 & 49,263 $\pm$ 0,489 & 0,446 $\pm$ 0,009 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Ajuste do limiar: 5 ajustes adicionais do pipeline (validação cruzada no treino). Fonte: Autoria própria (2026).}
+\end{table}

@@ -1,0 +1,24 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Métricas de detecção da classe de ataque no conjunto de teste}
+  \label{tab:metricas}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccccc}
+    \hline
+    Cenário & Configuração & Precisão & Sensibilidade & F1 & PR-AUC & ROC-AUC & Acurácia & TFP \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 0,3267 $\pm$ 0,2926 & 0,0001 $\pm$ 0,0001 & 0,0003 $\pm$ 0,0003 & 0,2693 $\pm$ 0,0017 & 0,7944 $\pm$ 0,0014 & 0,8682 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0000 \\
+     & Árvore de Decisão / SMOTE-NC & 0,2700 $\pm$ 0,0030 & 0,9994 $\pm$ 0,0002 & 0,4252 $\pm$ 0,0037 & 0,2696 $\pm$ 0,0016 & 0,7946 $\pm$ 0,0012 & 0,6438 $\pm$ 0,0055 & 0,4102 $\pm$ 0,0064 \\
+     & \textit{Random Forest} / Original & 0,1000 $\pm$ 0,2236 & 0,0000 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0001 & 0,2697 $\pm$ 0,0009 & 0,7948 $\pm$ 0,0006 & 0,8682 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0000 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,2713 $\pm$ 0,0007 & 0,9994 $\pm$ 0,0002 & 0,4268 $\pm$ 0,0009 & 0,2696 $\pm$ 0,0012 & 0,7950 $\pm$ 0,0009 & 0,6462 $\pm$ 0,0013 & 0,4074 $\pm$ 0,0015 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 0,6052 $\pm$ 0,0006 & 0,9996 $\pm$ 0,0001 & 0,7539 $\pm$ 0,0004 & 0,6044 $\pm$ 0,0026 & 0,7957 $\pm$ 0,0013 & 0,7491 $\pm$ 0,0006 & 0,4075 $\pm$ 0,0010 \\
+     & Árvore de Decisão / SMOTE-NC & 0,6059 $\pm$ 0,0010 & 0,9996 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 & 0,6061 $\pm$ 0,0012 & 0,7968 $\pm$ 0,0009 & 0,7498 $\pm$ 0,0011 & 0,4063 $\pm$ 0,0018 \\
+     & \textit{Random Forest} / Original & 0,6059 $\pm$ 0,0010 & 0,9993 $\pm$ 0,0002 & 0,7544 $\pm$ 0,0008 & 0,6065 $\pm$ 0,0016 & 0,7969 $\pm$ 0,0012 & 0,7498 $\pm$ 0,0011 & 0,4061 $\pm$ 0,0018 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,6060 $\pm$ 0,0010 & 0,9998 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 & 0,6064 $\pm$ 0,0010 & 0,7968 $\pm$ 0,0006 & 0,7499 $\pm$ 0,0011 & 0,4063 $\pm$ 0,0018 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Fonte: Autoria própria (2026).}
+\end{table}

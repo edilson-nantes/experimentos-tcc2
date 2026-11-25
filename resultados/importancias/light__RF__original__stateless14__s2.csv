@@ -1,0 +1,15 @@
+id_config,semente,caracteristica,importancia
+light__RF__original__stateless14,2,longest_word,0.253625295980208
+light__RF__original__stateless14,2,sld,0.2281541876363687
+light__RF__original__stateless14,2,FQDN_count,0.13224342880120057
+light__RF__original__stateless14,2,subdomain_length,0.0935506541840619
+light__RF__original__stateless14,2,upper,0.008781557682323169
+light__RF__original__stateless14,2,lower,0.020988226715947265
+light__RF__original__stateless14,2,numeric,0.08924891684149291
+light__RF__original__stateless14,2,entropy,0.005959593712846486
+light__RF__original__stateless14,2,special,0.10629649482092932
+light__RF__original__stateless14,2,labels,0.008992628861178
+light__RF__original__stateless14,2,labels_max,0.0038353228450535115
+light__RF__original__stateless14,2,labels_average,0.019726932375377777
+light__RF__original__stateless14,2,len,0.019043924831138103
+light__RF__original__stateless14,2,subdomain,0.00955283471187432

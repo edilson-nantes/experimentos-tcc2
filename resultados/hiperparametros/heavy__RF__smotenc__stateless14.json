@@ -1,0 +1,50 @@
+{
+  "id_config": "heavy__RF__smotenc__stateless14",
+  "cenario": "heavy",
+  "modelo": "RF",
+  "balanceamento": "smotenc",
+  "conjunto": "stateless14",
+  "melhores_hiperparametros": {
+    "max_depth": 20,
+    "min_samples_split": 2,
+    "n_estimators": 100
+  },
+  "f1_cv_media": 0.7537814521940635,
+  "f1_cv_dp": 0.000985918283904505,
+  "combinacoes_empatadas_no_topo": 1,
+  "grade": {
+    "n_estimators": [
+      50,
+      100,
+      200
+    ],
+    "max_depth": [
+      10,
+      20,
+      null
+    ],
+    "min_samples_split": [
+      2,
+      5,
+      10
+    ]
+  },
+  "k_folds": 5,
+  "semente_cv": 42,
+  "n_dev": 98166,
+  "n_dev_ataque": 37751,
+  "tempo_grid_s": 151.93915983199986,
+  "n_jobs_grid": 6,
+  "teste_rapido": false,
+  "criado_em": "2026-11-19T02:49:41",
+  "versoes": {
+    "python": "3.13.5",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "imblearn": "0.14.2",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  }
+}

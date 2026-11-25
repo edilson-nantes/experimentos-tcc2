@@ -1,0 +1,23 @@
+{
+  "cenario": "heavy",
+  "n_total": 654437,
+  "n_ataque_total": 251670,
+  "n_dev": 98166,
+  "n_ataque_dev": 37751,
+  "n_base_experimental": 556271,
+  "fracao_dev": 0.15,
+  "semente": 42,
+  "estratificada": true,
+  "hash_dados": "f91a5998542129f50ed0458a60e38a5cde31e3288c6e5b9ea1ac719d5cd24fc0",
+  "criado_em": "2026-11-19T02:45:48",
+  "versoes": {
+    "python": "3.13.5",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "imblearn": "0.14.2",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  }
+}

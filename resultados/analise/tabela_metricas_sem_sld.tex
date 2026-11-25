@@ -1,0 +1,20 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Métricas de detecção da classe de ataque no conjunto de teste — Random Forest sem a coluna sld}
+  \label{tab:metricas_sem_sld}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccccc}
+    \hline
+    Cenário & Configuração & Precisão & Sensibilidade & F1 & PR-AUC & ROC-AUC & Acurácia & TFP \\
+    \hline
+    \textit{Light} & \textit{Random Forest} / Original (sem sld) & 0,1000 $\pm$ 0,2236 & 0,0000 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0001 & 0,2694 $\pm$ 0,0006 & 0,7948 $\pm$ 0,0006 & 0,8682 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0000 \\
+     & \textit{Random Forest} / SMOTE-NC (sem sld) & 0,2713 $\pm$ 0,0007 & 0,9994 $\pm$ 0,0002 & 0,4268 $\pm$ 0,0009 & 0,2697 $\pm$ 0,0011 & 0,7950 $\pm$ 0,0009 & 0,6462 $\pm$ 0,0013 & 0,4074 $\pm$ 0,0015 \\
+    \hline
+    \textit{Heavy} & \textit{Random Forest} / Original (sem sld) & 0,6059 $\pm$ 0,0010 & 0,9992 $\pm$ 0,0002 & 0,7544 $\pm$ 0,0008 & 0,6064 $\pm$ 0,0015 & 0,7969 $\pm$ 0,0011 & 0,7498 $\pm$ 0,0011 & 0,4061 $\pm$ 0,0017 \\
+     & \textit{Random Forest} / SMOTE-NC (sem sld) & 0,6060 $\pm$ 0,0010 & 0,9998 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 & 0,6064 $\pm$ 0,0010 & 0,7968 $\pm$ 0,0006 & 0,7499 $\pm$ 0,0011 & 0,4063 $\pm$ 0,0017 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Fonte: Autoria própria (2026).}
+\end{table}

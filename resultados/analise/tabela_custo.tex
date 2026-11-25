@@ -1,0 +1,24 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Custo computacional (segundos)}
+  \label{tab:custo}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccc}
+    \hline
+    Cenário & Configuração & SMOTE-NC (s) & Treino (s) & Predição (s) \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 0,000 $\pm$ 0,000 & 0,673 $\pm$ 0,045 & 0,144 $\pm$ 0,002 \\
+     & Árvore de Decisão / SMOTE-NC & 4,161 $\pm$ 0,032 & 0,798 $\pm$ 0,022 & 0,144 $\pm$ 0,002 \\
+     & \textit{Random Forest} / Original & 0,000 $\pm$ 0,000 & 2,112 $\pm$ 0,053 & 0,209 $\pm$ 0,016 \\
+     & \textit{Random Forest} / SMOTE-NC & 4,131 $\pm$ 0,028 & 3,259 $\pm$ 0,106 & 0,224 $\pm$ 0,027 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 0,000 $\pm$ 0,000 & 1,700 $\pm$ 0,139 & 0,236 $\pm$ 0,004 \\
+     & Árvore de Decisão / SMOTE-NC & 6,062 $\pm$ 0,020 & 1,446 $\pm$ 0,029 & 0,234 $\pm$ 0,003 \\
+     & \textit{Random Forest} / Original & 0,000 $\pm$ 0,000 & 10,967 $\pm$ 0,181 & 0,454 $\pm$ 0,006 \\
+     & \textit{Random Forest} / SMOTE-NC & 6,071 $\pm$ 0,019 & 12,355 $\pm$ 1,068 & 0,455 $\pm$ 0,013 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Tempos com n\_jobs = 6. Fonte: Autoria própria (2026).}
+\end{table}

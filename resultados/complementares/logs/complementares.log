@@ -1,0 +1,499 @@
+2026-11-19 03:16:27 | INFO | ==============================================================================
+2026-11-19 03:16:27 | INFO | Início: 06_complementares.py --dados dados/CICBellEXFDNS2021.zip --saida resultados --n-jobs 6 --experimento referencia --experimento grupo --experimento permutacao --experimento balanceamento --experimento cruzado
+2026-11-19 03:16:27 | INFO | Ambiente: python 3.13.5 | sklearn 1.9.1 | imblearn 0.14.2 | pandas 3.1.1 | numpy 2.5.5
+2026-11-19 03:16:27 | INFO | Hardware: AMD Ryzen 5 2600 Six-Core Processor | 6 núcleos físicos / 12 lógicos | 11.6 GB RAM | n_jobs=6
+2026-11-19 03:16:27 | INFO | Experimentos: ['referencia', 'grupo', 'permutacao', 'balanceamento', 'cruzado'] | sementes: [0, 1, 2, 3, 4] | saída: /home/xaman/Documentos/TCC/tcc2_complementares/tcc2_experimento/resultados/complementares
+2026-11-19 03:16:27 | INFO | ------------------------------ referencia ------------------------------
+2026-11-19 03:16:29 | INFO | [light] total=323847 | dev=48578 (ataque 6403) | base experimental=275269 (ataque 36280)
+2026-11-19 03:16:30 | INFO | [light__REF__limiar05__stateless14] semente 0: P=0.3333 R=0.0001 F1=0.0002 PR-AUC=0.2698 ROC-AUC=0.7948 | VP=1 FP=2 FN=10883 | n_teste=82581 (ataque 10884) | limiar=0.5000
+2026-11-19 03:16:30 | INFO | [light__REF__limiarf1__stateless14] semente 0: P=0.2703 R=0.9987 F1=0.4255 PR-AUC=0.2698 ROC-AUC=0.7948 | VP=10870 FP=29342 FN=14 | n_teste=82581 (ataque 10884) | limiar=0.2263
+2026-11-19 03:16:30 | INFO | [light__REF__limiar05__stateless14] semente 1: P=0.5000 R=0.0001 F1=0.0002 PR-AUC=0.2688 ROC-AUC=0.7945 | VP=1 FP=1 FN=10883 | n_teste=82581 (ataque 10884) | limiar=0.5000
+2026-11-19 03:16:30 | INFO | [light__REF__limiarf1__stateless14] semente 1: P=0.2715 R=0.9989 F1=0.4270 PR-AUC=0.2688 ROC-AUC=0.7945 | VP=10872 FP=29168 FN=12 | n_teste=82581 (ataque 10884) | limiar=0.2214
+2026-11-19 03:16:30 | INFO | [light__REF__limiar05__stateless14] semente 2: P=1.0000 R=0.0001 F1=0.0002 PR-AUC=0.2690 ROC-AUC=0.7941 | VP=1 FP=0 FN=10883 | n_teste=82581 (ataque 10884) | limiar=0.5000
+2026-11-19 03:16:30 | INFO | [light__REF__limiarf1__stateless14] semente 2: P=0.2724 R=0.9990 F1=0.4280 PR-AUC=0.2690 ROC-AUC=0.7941 | VP=10873 FP=29046 FN=11 | n_teste=82581 (ataque 10884) | limiar=0.2195
+2026-11-19 03:16:31 | INFO | [light__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2694 ROC-AUC=0.7954 | VP=0 FP=0 FN=10884 | n_teste=82581 (ataque 10884) | limiar=0.5000
+2026-11-19 03:16:31 | INFO | [light__REF__limiarf1__stateless14] semente 3: P=0.2716 R=0.9993 F1=0.4271 PR-AUC=0.2694 ROC-AUC=0.7954 | VP=10876 FP=29169 FN=8 | n_teste=82581 (ataque 10884) | limiar=0.2314
+2026-11-19 03:16:31 | INFO | [light__REF__limiar05__stateless14] semente 4: P=0.8000 R=0.0004 F1=0.0007 PR-AUC=0.2708 ROC-AUC=0.7956 | VP=4 FP=1 FN=10880 | n_teste=82581 (ataque 10884) | limiar=0.5000
+2026-11-19 03:16:31 | INFO | [light__REF__limiarf1__stateless14] semente 4: P=0.2716 R=0.9984 F1=0.4270 PR-AUC=0.2708 ROC-AUC=0.7956 | VP=10867 FP=29150 FN=17 | n_teste=82581 (ataque 10884) | limiar=0.2402
+2026-11-19 03:16:34 | INFO | [heavy] total=654437 | dev=98166 (ataque 37751) | base experimental=556271 (ataque 213919)
+2026-11-19 03:16:35 | INFO | [heavy__REF__limiar05__stateless14] semente 0: P=0.6076 R=0.9997 F1=0.7558 PR-AUC=0.6094 ROC-AUC=0.7990 | VP=64155 FP=41431 FN=21 | n_teste=166882 (ataque 64176) | limiar=0.5000
+2026-11-19 03:16:35 | INFO | [heavy__REF__limiarf1__stateless14] semente 0: P=0.6075 R=0.9999 F1=0.7558 PR-AUC=0.6094 ROC-AUC=0.7990 | VP=64168 FP=41451 FN=8 | n_teste=166882 (ataque 64176) | limiar=0.4211
+2026-11-19 03:16:36 | INFO | [heavy__REF__limiar05__stateless14] semente 1: P=0.6053 R=0.9995 F1=0.7540 PR-AUC=0.6060 ROC-AUC=0.7966 | VP=64141 FP=41821 FN=35 | n_teste=166882 (ataque 64176) | limiar=0.5000
+2026-11-19 03:16:36 | INFO | [heavy__REF__limiarf1__stateless14] semente 1: P=0.6053 R=0.9997 F1=0.7541 PR-AUC=0.6060 ROC-AUC=0.7966 | VP=64158 FP=41834 FN=18 | n_teste=166882 (ataque 64176) | limiar=0.4000
+2026-11-19 03:16:36 | INFO | [heavy__REF__limiar05__stateless14] semente 2: P=0.6057 R=0.9997 F1=0.7544 PR-AUC=0.6063 ROC-AUC=0.7965 | VP=64158 FP=41760 FN=18 | n_teste=166882 (ataque 64176) | limiar=0.5000
+2026-11-19 03:16:36 | INFO | [heavy__REF__limiarf1__stateless14] semente 2: P=0.6057 R=0.9999 F1=0.7544 PR-AUC=0.6063 ROC-AUC=0.7965 | VP=64167 FP=41772 FN=9 | n_teste=166882 (ataque 64176) | limiar=0.4737
+2026-11-19 03:16:37 | INFO | [heavy__REF__limiar05__stateless14] semente 3: P=0.6049 R=0.9997 F1=0.7537 PR-AUC=0.6065 ROC-AUC=0.7968 | VP=64157 FP=41910 FN=19 | n_teste=166882 (ataque 64176) | limiar=0.5000
+2026-11-19 03:16:37 | INFO | [heavy__REF__limiarf1__stateless14] semente 3: P=0.6049 R=0.9998 F1=0.7538 PR-AUC=0.6065 ROC-AUC=0.7968 | VP=64166 FP=41916 FN=10 | n_teste=166882 (ataque 64176) | limiar=0.4000
+2026-11-19 03:16:38 | INFO | [heavy__REF__limiar05__stateless14] semente 4: P=0.6063 R=0.9995 F1=0.7547 PR-AUC=0.6053 ROC-AUC=0.7961 | VP=64145 FP=41658 FN=31 | n_teste=166882 (ataque 64176) | limiar=0.5000
+2026-11-19 03:16:38 | INFO | [heavy__REF__limiarf1__stateless14] semente 4: P=0.6063 R=0.9998 F1=0.7548 PR-AUC=0.6053 ROC-AUC=0.7961 | VP=64165 FP=41668 FN=11 | n_teste=166882 (ataque 64176) | limiar=0.4000
+2026-11-19 03:16:38 | INFO | [referencia] concluído em 0.2 min
+2026-11-19 03:16:38 | INFO | ------------------------------ grupo ------------------------------
+2026-11-19 03:16:50 | INFO | [grupo/light] semente 0 dobra 0: n=275269 | treino 182531 (ataque 23204) | teste 92738 (ataque 13076, 14.1%; 1 vetores de ataque) | linhas de teste com vetor inédito: 92738
+2026-11-19 03:16:50 | INFO | [grupo/light] semente 0 dobra 1: n=275269 | treino 184005 (ataque 24678) | teste 91264 (ataque 11602, 12.7%; 20 vetores de ataque) | linhas de teste com vetor inédito: 91264
+2026-11-19 03:16:50 | INFO | [grupo/light] semente 0 dobra 2: n=275269 | treino 184002 (ataque 24678) | teste 91267 (ataque 11602, 12.7%; 27 vetores de ataque) | linhas de teste com vetor inédito: 91267
+2026-11-19 03:16:50 | INFO | [light__REF__limiar05__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:16:50 | INFO | [light__REF__limiarf1__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:16:50 | INFO | [light__REF__limiar05__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11602 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:16:50 | INFO | [light__REF__limiarf1__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11602 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:16:50 | INFO | [light__REF__limiar05__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11602 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:16:50 | INFO | [light__REF__limiarf1__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11602 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:16:51 | INFO | [light__REF__limiar05__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4865 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:16:51 | INFO | [light__REF__limiarf1__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4865 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:16:52 | INFO | [light__DT__original__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4776 | VP=0 FP=136 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:16:53 | INFO | [light__DT__original__stateless14] semente 0: P=0.1111 R=0.0001 F1=0.0002 PR-AUC=0.2597 ROC-AUC=0.7783 | VP=1 FP=8 FN=11601 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:16:54 | INFO | [light__DT__original__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1260 ROC-AUC=0.4780 | VP=0 FP=0 FN=11602 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:16:54 | INFO | [light__DT__original__stateless14] semente 0: P=0.0069 R=0.0000 F1=0.0001 PR-AUC=0.1669 ROC-AUC=0.5741 | VP=1 FP=144 FN=36279 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:16:59 | INFO | [light__DT__smotenc__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4850 | VP=0 FP=17 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:17:04 | INFO | [light__DT__smotenc__stateless14] semente 0: P=0.2739 R=0.8959 F1=0.4195 PR-AUC=0.2647 ROC-AUC=0.7876 | VP=10394 FP=27557 FN=1208 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:17:09 | INFO | [light__DT__smotenc__stateless14] semente 0: P=0.2705 R=0.8651 F1=0.4121 PR-AUC=0.2552 ROC-AUC=0.7711 | VP=10037 FP=27071 FN=1565 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:17:10 | INFO | [light__DT__smotenc__stateless14] semente 0: P=0.2721 R=0.5631 F1=0.3669 PR-AUC=0.2134 ROC-AUC=0.6704 | VP=20431 FP=54645 FN=15849 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:17:12 | INFO | [light__RF__original__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2715 ROC-AUC=0.7791 | VP=0 FP=1 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:17:14 | INFO | [light__RF__original__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2726 ROC-AUC=0.8054 | VP=0 FP=0 FN=11602 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:17:16 | INFO | [light__RF__original__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2699 ROC-AUC=0.8022 | VP=0 FP=0 FN=11602 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:17:16 | INFO | [light__RF__original__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2715 ROC-AUC=0.7957 | VP=0 FP=1 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:17:24 | INFO | [light__RF__smotenc__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2720 ROC-AUC=0.7802 | VP=0 FP=6 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:17:31 | INFO | [light__RF__smotenc__stateless14] semente 0: P=0.2731 R=0.9389 F1=0.4231 PR-AUC=0.2737 ROC-AUC=0.8063 | VP=10893 FP=28999 FN=709 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:17:37 | INFO | [light__RF__smotenc__stateless14] semente 0: P=0.2700 R=0.1481 F1=0.1913 PR-AUC=0.2632 ROC-AUC=0.7863 | VP=1718 FP=4645 FN=9884 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:17:38 | INFO | [light__RF__smotenc__stateless14] semente 0: P=0.2726 R=0.3476 F1=0.3056 PR-AUC=0.2701 ROC-AUC=0.7917 | VP=12611 FP=33650 FN=23669 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:17:50 | INFO | [grupo/light] semente 1 dobra 0: n=275269 | treino 182531 (ataque 23204) | teste 92738 (ataque 13076, 14.1%; 1 vetores de ataque) | linhas de teste com vetor inédito: 92738
+2026-11-19 03:17:50 | INFO | [grupo/light] semente 1 dobra 1: n=275269 | treino 184006 (ataque 24679) | teste 91263 (ataque 11601, 12.7%; 25 vetores de ataque) | linhas de teste com vetor inédito: 91263
+2026-11-19 03:17:50 | INFO | [grupo/light] semente 1 dobra 2: n=275269 | treino 184001 (ataque 24677) | teste 91268 (ataque 11603, 12.7%; 22 vetores de ataque) | linhas de teste com vetor inédito: 91268
+2026-11-19 03:17:50 | INFO | [light__REF__limiar05__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:17:50 | INFO | [light__REF__limiarf1__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:17:51 | INFO | [light__REF__limiar05__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:17:51 | INFO | [light__REF__limiarf1__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:17:51 | INFO | [light__REF__limiar05__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:17:51 | INFO | [light__REF__limiarf1__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:17:51 | INFO | [light__REF__limiar05__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4864 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:17:51 | INFO | [light__REF__limiarf1__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4864 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:17:52 | INFO | [light__DT__original__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4982 | VP=0 FP=128 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:17:53 | INFO | [light__DT__original__stateless14] semente 1: P=0.1429 R=0.0001 F1=0.0002 PR-AUC=0.2620 ROC-AUC=0.7859 | VP=1 FP=6 FN=11600 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:17:54 | INFO | [light__DT__original__stateless14] semente 1: P=0.2712 R=0.4263 F1=0.3315 PR-AUC=0.1917 ROC-AUC=0.6361 | VP=4946 FP=13292 FN=6657 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:17:55 | INFO | [light__DT__original__stateless14] semente 1: P=0.2693 R=0.1364 F1=0.1810 PR-AUC=0.1929 ROC-AUC=0.6307 | VP=4947 FP=13426 FN=31333 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:18:00 | INFO | [light__DT__smotenc__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4761 | VP=0 FP=22 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:18:05 | INFO | [light__DT__smotenc__stateless14] semente 1: P=0.2730 R=0.9390 F1=0.4231 PR-AUC=0.2640 ROC-AUC=0.7873 | VP=10893 FP=29001 FN=708 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:18:10 | INFO | [light__DT__smotenc__stateless14] semente 1: P=0.2706 R=0.8674 F1=0.4125 PR-AUC=0.2548 ROC-AUC=0.7697 | VP=10064 FP=27126 FN=1539 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:18:10 | INFO | [light__DT__smotenc__stateless14] semente 1: P=0.2718 R=0.5776 F1=0.3697 PR-AUC=0.2132 ROC-AUC=0.6692 | VP=20957 FP=56149 FN=15323 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:18:13 | INFO | [light__RF__original__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2597 ROC-AUC=0.7515 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:18:15 | INFO | [light__RF__original__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2723 ROC-AUC=0.8045 | VP=0 FP=0 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:18:17 | INFO | [light__RF__original__stateless14] semente 1: P=0.2718 R=0.3752 F1=0.3153 PR-AUC=0.2699 ROC-AUC=0.8014 | VP=4353 FP=11660 FN=7250 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:18:17 | INFO | [light__RF__original__stateless14] semente 1: P=0.2718 R=0.1200 F1=0.1665 PR-AUC=0.2688 ROC-AUC=0.7901 | VP=4353 FP=11660 FN=31927 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:18:25 | INFO | [light__RF__smotenc__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2453 ROC-AUC=0.7146 | VP=0 FP=3 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:18:31 | INFO | [light__RF__smotenc__stateless14] semente 1: P=0.2730 R=0.9379 F1=0.4229 PR-AUC=0.2728 ROC-AUC=0.8056 | VP=10880 FP=28974 FN=721 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:18:38 | INFO | [light__RF__smotenc__stateless14] semente 1: P=0.2712 R=0.5237 F1=0.3574 PR-AUC=0.2655 ROC-AUC=0.7912 | VP=6077 FP=16328 FN=5526 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:18:38 | INFO | [light__RF__smotenc__stateless14] semente 1: P=0.2723 R=0.4674 F1=0.3442 PR-AUC=0.2656 ROC-AUC=0.7834 | VP=16957 FP=45305 FN=19323 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:18:50 | INFO | [grupo/light] semente 2 dobra 0: n=275269 | treino 182531 (ataque 23204) | teste 92738 (ataque 13076, 14.1%; 1 vetores de ataque) | linhas de teste com vetor inédito: 92738
+2026-11-19 03:18:50 | INFO | [grupo/light] semente 2 dobra 1: n=275269 | treino 184005 (ataque 24678) | teste 91264 (ataque 11602, 12.7%; 18 vetores de ataque) | linhas de teste com vetor inédito: 91264
+2026-11-19 03:18:50 | INFO | [grupo/light] semente 2 dobra 2: n=275269 | treino 184002 (ataque 24678) | teste 91267 (ataque 11602, 12.7%; 29 vetores de ataque) | linhas de teste com vetor inédito: 91267
+2026-11-19 03:18:50 | INFO | [light__REF__limiar05__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:18:50 | INFO | [light__REF__limiarf1__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:18:50 | INFO | [light__REF__limiar05__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11602 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:18:50 | INFO | [light__REF__limiarf1__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11602 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:18:51 | INFO | [light__REF__limiar05__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11602 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:18:51 | INFO | [light__REF__limiarf1__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11602 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:18:51 | INFO | [light__REF__limiar05__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4865 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:18:51 | INFO | [light__REF__limiarf1__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4865 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:18:52 | INFO | [light__DT__original__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4983 | VP=0 FP=132 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:18:53 | INFO | [light__DT__original__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2639 ROC-AUC=0.7870 | VP=0 FP=2 FN=11602 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:18:54 | INFO | [light__DT__original__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2525 ROC-AUC=0.7657 | VP=0 FP=0 FN=11602 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:18:55 | INFO | [light__DT__original__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2117 ROC-AUC=0.6710 | VP=0 FP=134 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:19:00 | INFO | [light__DT__smotenc__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4787 | VP=0 FP=15 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:19:05 | INFO | [light__DT__smotenc__stateless14] semente 2: P=0.2730 R=0.9387 F1=0.4230 PR-AUC=0.2635 ROC-AUC=0.7870 | VP=10891 FP=29001 FN=711 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:19:10 | INFO | [light__DT__smotenc__stateless14] semente 2: P=0.2703 R=0.8675 F1=0.4122 PR-AUC=0.2515 ROC-AUC=0.7631 | VP=10065 FP=27173 FN=1537 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:19:10 | INFO | [light__DT__smotenc__stateless14] semente 2: P=0.2716 R=0.5776 F1=0.3695 PR-AUC=0.2119 ROC-AUC=0.6677 | VP=20956 FP=56189 FN=15324 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:19:12 | INFO | [light__RF__original__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2719 ROC-AUC=0.7800 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:19:14 | INFO | [light__RF__original__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2734 ROC-AUC=0.8056 | VP=0 FP=0 FN=11602 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:19:17 | INFO | [light__RF__original__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2694 ROC-AUC=0.8014 | VP=0 FP=0 FN=11602 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:19:17 | INFO | [light__RF__original__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2704 ROC-AUC=0.7940 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:19:24 | INFO | [light__RF__smotenc__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2718 ROC-AUC=0.7797 | VP=0 FP=7 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:19:31 | INFO | [light__RF__smotenc__stateless14] semente 2: P=0.2732 R=0.9386 F1=0.4232 PR-AUC=0.2729 ROC-AUC=0.8057 | VP=10890 FP=28972 FN=712 | n_teste=91264 (ataque 11602) | dobra 1
+2026-11-19 03:19:38 | INFO | [light__RF__smotenc__stateless14] semente 2: P=0.2705 R=0.8725 F1=0.4130 PR-AUC=0.2655 ROC-AUC=0.7930 | VP=10123 FP=27294 FN=1479 | n_teste=91267 (ataque 11602) | dobra 2
+2026-11-19 03:19:38 | INFO | [light__RF__smotenc__stateless14] semente 2: P=0.2719 R=0.5792 F1=0.3701 PR-AUC=0.2694 ROC-AUC=0.7918 | VP=21013 FP=56273 FN=15267 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:19:50 | INFO | [grupo/light] semente 3 dobra 0: n=275269 | treino 182531 (ataque 23204) | teste 92738 (ataque 13076, 14.1%; 1 vetores de ataque) | linhas de teste com vetor inédito: 92738
+2026-11-19 03:19:50 | INFO | [grupo/light] semente 3 dobra 1: n=275269 | treino 184006 (ataque 24679) | teste 91263 (ataque 11601, 12.7%; 23 vetores de ataque) | linhas de teste com vetor inédito: 91263
+2026-11-19 03:19:50 | INFO | [grupo/light] semente 3 dobra 2: n=275269 | treino 184001 (ataque 24677) | teste 91268 (ataque 11603, 12.7%; 24 vetores de ataque) | linhas de teste com vetor inédito: 91268
+2026-11-19 03:19:50 | INFO | [light__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:19:50 | INFO | [light__REF__limiarf1__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:19:50 | INFO | [light__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:19:50 | INFO | [light__REF__limiarf1__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:19:50 | INFO | [light__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:19:50 | INFO | [light__REF__limiarf1__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:19:51 | INFO | [light__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4864 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:19:51 | INFO | [light__REF__limiarf1__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4864 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:19:52 | INFO | [light__DT__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4972 | VP=0 FP=134 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:19:53 | INFO | [light__DT__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2276 ROC-AUC=0.7125 | VP=0 FP=3 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:19:54 | INFO | [light__DT__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1319 ROC-AUC=0.5118 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:19:54 | INFO | [light__DT__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1626 ROC-AUC=0.5687 | VP=0 FP=137 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:19:59 | INFO | [light__DT__smotenc__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4873 | VP=0 FP=19 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:20:04 | INFO | [light__DT__smotenc__stateless14] semente 3: P=0.2727 R=0.9389 F1=0.4227 PR-AUC=0.2638 ROC-AUC=0.7867 | VP=10892 FP=29043 FN=709 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:20:09 | INFO | [light__DT__smotenc__stateless14] semente 3: P=0.2714 R=0.3965 F1=0.3222 PR-AUC=0.1843 ROC-AUC=0.6052 | VP=4601 FP=12353 FN=7002 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:20:09 | INFO | [light__DT__smotenc__stateless14] semente 3: P=0.2722 R=0.4270 F1=0.3325 PR-AUC=0.1915 ROC-AUC=0.6194 | VP=15493 FP=41415 FN=20787 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:20:12 | INFO | [light__RF__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2674 ROC-AUC=0.7697 | VP=0 FP=1 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:20:14 | INFO | [light__RF__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2721 ROC-AUC=0.8049 | VP=0 FP=2 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:20:16 | INFO | [light__RF__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2685 ROC-AUC=0.8005 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:20:16 | INFO | [light__RF__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2692 ROC-AUC=0.7924 | VP=0 FP=3 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:20:24 | INFO | [light__RF__smotenc__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2719 ROC-AUC=0.7799 | VP=0 FP=5 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:20:31 | INFO | [light__RF__smotenc__stateless14] semente 3: P=0.2730 R=0.9377 F1=0.4229 PR-AUC=0.2723 ROC-AUC=0.8048 | VP=10878 FP=28965 FN=723 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:20:37 | INFO | [light__RF__smotenc__stateless14] semente 3: P=0.2667 R=0.0196 F1=0.0365 PR-AUC=0.2010 ROC-AUC=0.6431 | VP=227 FP=624 FN=11376 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:20:38 | INFO | [light__RF__smotenc__stateless14] semente 3: P=0.2729 R=0.3061 F1=0.2885 PR-AUC=0.2503 ROC-AUC=0.7454 | VP=11105 FP=29594 FN=25175 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:20:50 | INFO | [grupo/light] semente 4 dobra 0: n=275269 | treino 182531 (ataque 23204) | teste 92738 (ataque 13076, 14.1%; 1 vetores de ataque) | linhas de teste com vetor inédito: 92738
+2026-11-19 03:20:50 | INFO | [grupo/light] semente 4 dobra 1: n=275269 | treino 184006 (ataque 24679) | teste 91263 (ataque 11601, 12.7%; 22 vetores de ataque) | linhas de teste com vetor inédito: 91263
+2026-11-19 03:20:50 | INFO | [grupo/light] semente 4 dobra 2: n=275269 | treino 184001 (ataque 24677) | teste 91268 (ataque 11603, 12.7%; 25 vetores de ataque) | linhas de teste com vetor inédito: 91268
+2026-11-19 03:20:50 | INFO | [light__REF__limiar05__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:20:50 | INFO | [light__REF__limiarf1__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.5000 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:20:50 | INFO | [light__REF__limiar05__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:20:50 | INFO | [light__REF__limiarf1__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:20:51 | INFO | [light__REF__limiar05__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:20:51 | INFO | [light__REF__limiarf1__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1271 ROC-AUC=0.5000 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:20:51 | INFO | [light__REF__limiar05__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4864 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:20:51 | INFO | [light__REF__limiarf1__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1288 ROC-AUC=0.4864 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:20:52 | INFO | [light__DT__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4994 | VP=0 FP=4 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:20:53 | INFO | [light__DT__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2275 ROC-AUC=0.7124 | VP=0 FP=7 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:20:54 | INFO | [light__DT__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1802 ROC-AUC=0.6136 | VP=0 FP=2 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:20:54 | INFO | [light__DT__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1788 ROC-AUC=0.6011 | VP=0 FP=13 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:21:00 | INFO | [light__DT__smotenc__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.1410 ROC-AUC=0.4695 | VP=0 FP=15 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:21:05 | INFO | [light__DT__smotenc__stateless14] semente 4: P=0.2731 R=0.9397 F1=0.4232 PR-AUC=0.2637 ROC-AUC=0.7873 | VP=10902 FP=29015 FN=699 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:21:10 | INFO | [light__DT__smotenc__stateless14] semente 4: P=0.2705 R=0.8699 F1=0.4127 PR-AUC=0.2516 ROC-AUC=0.7639 | VP=10094 FP=27221 FN=1509 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:21:10 | INFO | [light__DT__smotenc__stateless14] semente 4: P=0.2718 R=0.5787 F1=0.3699 PR-AUC=0.2128 ROC-AUC=0.6674 | VP=20996 FP=56251 FN=15284 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:21:12 | INFO | [light__RF__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2721 ROC-AUC=0.7803 | VP=0 FP=0 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:21:14 | INFO | [light__RF__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2724 ROC-AUC=0.8052 | VP=0 FP=0 FN=11601 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:21:17 | INFO | [light__RF__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2686 ROC-AUC=0.8000 | VP=0 FP=0 FN=11603 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:21:17 | INFO | [light__RF__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2708 ROC-AUC=0.7948 | VP=0 FP=0 FN=36280 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:21:24 | INFO | [light__RF__smotenc__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.2720 ROC-AUC=0.7802 | VP=0 FP=3 FN=13076 | n_teste=92738 (ataque 13076) | dobra 0
+2026-11-19 03:21:31 | INFO | [light__RF__smotenc__stateless14] semente 4: P=0.2731 R=0.9385 F1=0.4231 PR-AUC=0.2721 ROC-AUC=0.8051 | VP=10888 FP=28979 FN=713 | n_teste=91263 (ataque 11601) | dobra 1
+2026-11-19 03:21:38 | INFO | [light__RF__smotenc__stateless14] semente 4: P=0.2697 R=0.4986 F1=0.3501 PR-AUC=0.2526 ROC-AUC=0.7623 | VP=5785 FP=15663 FN=5818 | n_teste=91268 (ataque 11603) | dobra 2
+2026-11-19 03:21:38 | INFO | [light__RF__smotenc__stateless14] semente 4: P=0.2719 R=0.4596 F1=0.3417 PR-AUC=0.2659 ROC-AUC=0.7837 | VP=16673 FP=44645 FN=19607 | n_teste=275269 (ataque 36280) | fora da dobra
+2026-11-19 03:21:56 | INFO | [grupo/heavy] semente 0 dobra 0: n=556271 | treino 364312 (ataque 136072) | teste 191959 (ataque 77847, 40.6%; 2 vetores de ataque) | linhas de teste com vetor inédito: 191959
+2026-11-19 03:21:56 | INFO | [grupo/heavy] semente 0 dobra 1: n=556271 | treino 374113 (ataque 145880) | teste 182158 (ataque 68039, 37.4%; 36 vetores de ataque) | linhas de teste com vetor inédito: 182158
+2026-11-19 03:21:56 | INFO | [grupo/heavy] semente 0 dobra 2: n=556271 | treino 374117 (ataque 145886) | teste 182154 (ataque 68033, 37.3%; 51 vetores de ataque) | linhas de teste com vetor inédito: 182154
+2026-11-19 03:21:56 | INFO | [heavy__REF__limiar05__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77847 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:21:56 | INFO | [heavy__REF__limiarf1__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77847 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:21:57 | INFO | [heavy__REF__limiar05__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68039 | n_teste=182158 (ataque 68039) | dobra 1
+2026-11-19 03:21:57 | INFO | [heavy__REF__limiarf1__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68039 | n_teste=182158 (ataque 68039) | dobra 1
+2026-11-19 03:21:57 | INFO | [heavy__REF__limiar05__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68033 | n_teste=182154 (ataque 68033) | dobra 2
+2026-11-19 03:21:57 | INFO | [heavy__REF__limiarf1__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68033 | n_teste=182154 (ataque 68033) | dobra 2
+2026-11-19 03:21:58 | INFO | [heavy__REF__limiar05__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4847 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:21:58 | INFO | [heavy__REF__limiarf1__stateless14] semente 0: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4847 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:22:01 | INFO | [heavy__DT__original__stateless14] semente 0: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6072 ROC-AUC=0.7794 | VP=77847 FP=50360 FN=0 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:22:03 | INFO | [heavy__DT__original__stateless14] semente 0: P=0.6065 R=0.9029 F1=0.7256 PR-AUC=0.5889 ROC-AUC=0.7836 | VP=61430 FP=39862 FN=6609 | n_teste=182158 (ataque 68039) | dobra 1
+2026-11-19 03:22:05 | INFO | [heavy__DT__original__stateless14] semente 0: P=0.6031 R=0.4889 F1=0.5400 PR-AUC=0.5744 ROC-AUC=0.7655 | VP=33260 FP=21886 FN=34773 | n_teste=182154 (ataque 68033) | dobra 2
+2026-11-19 03:22:05 | INFO | [heavy__DT__original__stateless14] semente 0: P=0.6061 R=0.8066 F1=0.6921 PR-AUC=0.5924 ROC-AUC=0.7781 | VP=172537 FP=112108 FN=41382 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:22:13 | INFO | [heavy__DT__smotenc__stateless14] semente 0: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6072 ROC-AUC=0.7794 | VP=77847 FP=50363 FN=0 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:22:21 | INFO | [heavy__DT__smotenc__stateless14] semente 0: P=0.6064 R=0.9029 F1=0.7255 PR-AUC=0.5896 ROC-AUC=0.7841 | VP=61430 FP=39866 FN=6609 | n_teste=182158 (ataque 68039) | dobra 1
+2026-11-19 03:22:28 | INFO | [heavy__DT__smotenc__stateless14] semente 0: P=0.6046 R=0.8685 F1=0.7129 PR-AUC=0.5737 ROC-AUC=0.7642 | VP=59090 FP=38650 FN=8943 | n_teste=182154 (ataque 68033) | dobra 2
+2026-11-19 03:22:29 | INFO | [heavy__DT__smotenc__stateless14] semente 0: P=0.6062 R=0.9273 F1=0.7331 PR-AUC=0.5922 ROC-AUC=0.7763 | VP=198367 FP=128879 FN=15552 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:22:39 | INFO | [heavy__RF__original__stateless14] semente 0: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77847 FP=50349 FN=0 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:22:49 | INFO | [heavy__RF__original__stateless14] semente 0: P=0.6059 R=0.9095 F1=0.7273 PR-AUC=0.6060 ROC-AUC=0.8059 | VP=61882 FP=40252 FN=6157 | n_teste=182158 (ataque 68039) | dobra 1
+2026-11-19 03:22:58 | INFO | [heavy__RF__original__stateless14] semente 0: P=0.6046 R=0.8682 F1=0.7128 PR-AUC=0.6029 ROC-AUC=0.8024 | VP=59065 FP=38625 FN=8968 | n_teste=182154 (ataque 68033) | dobra 2
+2026-11-19 03:22:59 | INFO | [heavy__RF__original__stateless14] semente 0: P=0.6060 R=0.9293 F1=0.7336 PR-AUC=0.6052 ROC-AUC=0.7958 | VP=198794 FP=129226 FN=15125 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:23:16 | INFO | [heavy__RF__smotenc__stateless14] semente 0: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6072 ROC-AUC=0.7794 | VP=77847 FP=50349 FN=0 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:23:30 | INFO | [heavy__RF__smotenc__stateless14] semente 0: P=0.6058 R=0.9590 F1=0.7426 PR-AUC=0.6071 ROC-AUC=0.8067 | VP=65252 FP=42459 FN=2787 | n_teste=182158 (ataque 68039) | dobra 1
+2026-11-19 03:23:45 | INFO | [heavy__RF__smotenc__stateless14] semente 0: P=0.6046 R=0.8681 F1=0.7128 PR-AUC=0.6032 ROC-AUC=0.8030 | VP=59062 FP=38623 FN=8971 | n_teste=182154 (ataque 68033) | dobra 2
+2026-11-19 03:23:45 | INFO | [heavy__RF__smotenc__stateless14] semente 0: P=0.6060 R=0.9450 F1=0.7385 PR-AUC=0.6050 ROC-AUC=0.7957 | VP=202161 FP=131431 FN=11758 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:24:03 | INFO | [grupo/heavy] semente 1 dobra 0: n=556271 | treino 364313 (ataque 136073) | teste 191958 (ataque 77846, 40.6%; 1 vetores de ataque) | linhas de teste com vetor inédito: 191958
+2026-11-19 03:24:03 | INFO | [grupo/heavy] semente 1 dobra 1: n=556271 | treino 374074 (ataque 145841) | teste 182197 (ataque 68078, 37.4%; 40 vetores de ataque) | linhas de teste com vetor inédito: 182197
+2026-11-19 03:24:03 | INFO | [grupo/heavy] semente 1 dobra 2: n=556271 | treino 374155 (ataque 145924) | teste 182116 (ataque 67995, 37.3%; 48 vetores de ataque) | linhas de teste com vetor inédito: 182116
+2026-11-19 03:24:03 | INFO | [heavy__REF__limiar05__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77846 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:24:03 | INFO | [heavy__REF__limiarf1__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77846 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:24:04 | INFO | [heavy__REF__limiar05__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3737 ROC-AUC=0.5000 | VP=0 FP=0 FN=68078 | n_teste=182197 (ataque 68078) | dobra 1
+2026-11-19 03:24:04 | INFO | [heavy__REF__limiarf1__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3737 ROC-AUC=0.5000 | VP=0 FP=0 FN=68078 | n_teste=182197 (ataque 68078) | dobra 1
+2026-11-19 03:24:04 | INFO | [heavy__REF__limiar05__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3734 ROC-AUC=0.5000 | VP=0 FP=0 FN=67995 | n_teste=182116 (ataque 67995) | dobra 2
+2026-11-19 03:24:04 | INFO | [heavy__REF__limiarf1__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3734 ROC-AUC=0.5000 | VP=0 FP=0 FN=67995 | n_teste=182116 (ataque 67995) | dobra 2
+2026-11-19 03:24:05 | INFO | [heavy__REF__limiar05__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4846 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:24:05 | INFO | [heavy__REF__limiarf1__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4846 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:24:07 | INFO | [heavy__DT__original__stateless14] semente 1: P=0.6071 R=1.0000 F1=0.7556 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50372 FN=0 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:24:10 | INFO | [heavy__DT__original__stateless14] semente 1: P=0.6066 R=0.9021 F1=0.7254 PR-AUC=0.5891 ROC-AUC=0.7837 | VP=61410 FP=39831 FN=6668 | n_teste=182197 (ataque 68078) | dobra 1
+2026-11-19 03:24:11 | INFO | [heavy__DT__original__stateless14] semente 1: P=0.6043 R=0.5929 F1=0.5986 PR-AUC=0.5992 ROC-AUC=0.7984 | VP=40317 FP=26401 FN=27678 | n_teste=182116 (ataque 67995) | dobra 2
+2026-11-19 03:24:12 | INFO | [heavy__DT__original__stateless14] semente 1: P=0.6063 R=0.8394 F1=0.7041 PR-AUC=0.5998 ROC-AUC=0.7883 | VP=179573 FP=116604 FN=34346 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:24:20 | INFO | [heavy__DT__smotenc__stateless14] semente 1: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.6072 ROC-AUC=0.7793 | VP=0 FP=12 FN=77846 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:24:27 | INFO | [heavy__DT__smotenc__stateless14] semente 1: P=0.6056 R=0.9257 F1=0.7322 PR-AUC=0.5888 ROC-AUC=0.7835 | VP=63022 FP=41043 FN=5056 | n_teste=182197 (ataque 68078) | dobra 1
+2026-11-19 03:24:35 | INFO | [heavy__DT__smotenc__stateless14] semente 1: P=0.6046 R=0.9645 F1=0.7433 PR-AUC=0.5988 ROC-AUC=0.7970 | VP=65584 FP=42889 FN=2411 | n_teste=182116 (ataque 67995) | dobra 2
+2026-11-19 03:24:36 | INFO | [heavy__DT__smotenc__stateless14] semente 1: P=0.6051 R=0.6012 F1=0.6031 PR-AUC=0.5984 ROC-AUC=0.7862 | VP=128606 FP=83944 FN=85313 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:24:46 | INFO | [heavy__RF__original__stateless14] semente 1: P=0.6073 R=1.0000 F1=0.7557 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50345 FN=0 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:24:55 | INFO | [heavy__RF__original__stateless14] semente 1: P=0.6060 R=0.9402 F1=0.7370 PR-AUC=0.6055 ROC-AUC=0.8051 | VP=64009 FP=41622 FN=4069 | n_teste=182197 (ataque 68078) | dobra 1
+2026-11-19 03:25:05 | INFO | [heavy__RF__original__stateless14] semente 1: P=0.6046 R=0.8685 F1=0.7129 PR-AUC=0.6031 ROC-AUC=0.8027 | VP=59052 FP=38618 FN=8943 | n_teste=182116 (ataque 67995) | dobra 2
+2026-11-19 03:25:06 | INFO | [heavy__RF__original__stateless14] semente 1: P=0.6061 R=0.9392 F1=0.7367 PR-AUC=0.6051 ROC-AUC=0.7955 | VP=200907 FP=130585 FN=13012 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:25:22 | INFO | [heavy__RF__smotenc__stateless14] semente 1: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50350 FN=0 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:25:37 | INFO | [heavy__RF__smotenc__stateless14] semente 1: P=0.6060 R=0.9402 F1=0.7370 PR-AUC=0.6053 ROC-AUC=0.8047 | VP=64009 FP=41622 FN=4069 | n_teste=182197 (ataque 68078) | dobra 1
+2026-11-19 03:25:51 | INFO | [heavy__RF__smotenc__stateless14] semente 1: P=0.6046 R=0.8735 F1=0.7146 PR-AUC=0.6029 ROC-AUC=0.8027 | VP=59392 FP=38839 FN=8603 | n_teste=182116 (ataque 67995) | dobra 2
+2026-11-19 03:25:52 | INFO | [heavy__RF__smotenc__stateless14] semente 1: P=0.6061 R=0.9408 F1=0.7372 PR-AUC=0.6050 ROC-AUC=0.7954 | VP=201247 FP=130811 FN=12672 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:26:08 | INFO | [grupo/heavy] semente 2 dobra 0: n=556271 | treino 364311 (ataque 136071) | teste 191960 (ataque 77848, 40.6%; 2 vetores de ataque) | linhas de teste com vetor inédito: 191960
+2026-11-19 03:26:08 | INFO | [grupo/heavy] semente 2 dobra 1: n=556271 | treino 374119 (ataque 145886) | teste 182152 (ataque 68033, 37.3%; 42 vetores de ataque) | linhas de teste com vetor inédito: 182152
+2026-11-19 03:26:08 | INFO | [grupo/heavy] semente 2 dobra 2: n=556271 | treino 374112 (ataque 145881) | teste 182159 (ataque 68038, 37.4%; 45 vetores de ataque) | linhas de teste com vetor inédito: 182159
+2026-11-19 03:26:09 | INFO | [heavy__REF__limiar05__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77848 | n_teste=191960 (ataque 77848) | dobra 0
+2026-11-19 03:26:09 | INFO | [heavy__REF__limiarf1__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77848 | n_teste=191960 (ataque 77848) | dobra 0
+2026-11-19 03:26:09 | INFO | [heavy__REF__limiar05__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68033 | n_teste=182152 (ataque 68033) | dobra 1
+2026-11-19 03:26:09 | INFO | [heavy__REF__limiarf1__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68033 | n_teste=182152 (ataque 68033) | dobra 1
+2026-11-19 03:26:10 | INFO | [heavy__REF__limiar05__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68038 | n_teste=182159 (ataque 68038) | dobra 2
+2026-11-19 03:26:10 | INFO | [heavy__REF__limiarf1__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68038 | n_teste=182159 (ataque 68038) | dobra 2
+2026-11-19 03:26:10 | INFO | [heavy__REF__limiar05__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4847 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:26:11 | INFO | [heavy__REF__limiarf1__stateless14] semente 2: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4847 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:26:13 | INFO | [heavy__DT__original__stateless14] semente 2: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50365 FN=2 | n_teste=191960 (ataque 77848) | dobra 0
+2026-11-19 03:26:15 | INFO | [heavy__DT__original__stateless14] semente 2: P=0.6055 R=0.9274 F1=0.7327 PR-AUC=0.5896 ROC-AUC=0.7842 | VP=63094 FP=41100 FN=4939 | n_teste=182152 (ataque 68033) | dobra 1
+2026-11-19 03:26:17 | INFO | [heavy__DT__original__stateless14] semente 2: P=0.6032 R=0.4883 F1=0.5397 PR-AUC=0.5750 ROC-AUC=0.7662 | VP=33225 FP=21855 FN=34813 | n_teste=182159 (ataque 68038) | dobra 2
+2026-11-19 03:26:18 | INFO | [heavy__DT__original__stateless14] semente 2: P=0.6058 R=0.8142 F1=0.6947 PR-AUC=0.5925 ROC-AUC=0.7783 | VP=174165 FP=113320 FN=39754 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:26:25 | INFO | [heavy__DT__smotenc__stateless14] semente 2: P=0.6071 R=1.0000 F1=0.7556 PR-AUC=0.6072 ROC-AUC=0.7792 | VP=77848 FP=50373 FN=0 | n_teste=191960 (ataque 77848) | dobra 0
+2026-11-19 03:26:33 | INFO | [heavy__DT__smotenc__stateless14] semente 2: P=0.6056 R=0.9274 F1=0.7327 PR-AUC=0.5898 ROC-AUC=0.7842 | VP=63095 FP=41093 FN=4938 | n_teste=182152 (ataque 68033) | dobra 1
+2026-11-19 03:26:40 | INFO | [heavy__DT__smotenc__stateless14] semente 2: P=0.6030 R=0.4883 F1=0.5397 PR-AUC=0.4891 ROC-AUC=0.6169 | VP=33226 FP=21871 FN=34812 | n_teste=182159 (ataque 68038) | dobra 2
+2026-11-19 03:26:41 | INFO | [heavy__DT__smotenc__stateless14] semente 2: P=0.6058 R=0.8142 F1=0.6947 PR-AUC=0.5657 ROC-AUC=0.7370 | VP=174169 FP=113337 FN=39750 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:26:51 | INFO | [heavy__RF__original__stateless14] semente 2: P=0.6073 R=1.0000 F1=0.7556 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50345 FN=2 | n_teste=191960 (ataque 77848) | dobra 0
+2026-11-19 03:27:01 | INFO | [heavy__RF__original__stateless14] semente 2: P=0.6057 R=0.9570 F1=0.7418 PR-AUC=0.6070 ROC-AUC=0.8063 | VP=65105 FP=42383 FN=2928 | n_teste=182152 (ataque 68033) | dobra 1
+2026-11-19 03:27:11 | INFO | [heavy__RF__original__stateless14] semente 2: P=0.6046 R=0.8681 F1=0.7128 PR-AUC=0.6041 ROC-AUC=0.8043 | VP=59066 FP=38623 FN=8972 | n_teste=182159 (ataque 68038) | dobra 2
+2026-11-19 03:27:12 | INFO | [heavy__RF__original__stateless14] semente 2: P=0.6060 R=0.9444 F1=0.7382 PR-AUC=0.6051 ROC-AUC=0.7957 | VP=202017 FP=131351 FN=11902 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:27:28 | INFO | [heavy__RF__smotenc__stateless14] semente 2: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6072 ROC-AUC=0.7794 | VP=77848 FP=50350 FN=0 | n_teste=191960 (ataque 77848) | dobra 0
+2026-11-19 03:27:43 | INFO | [heavy__RF__smotenc__stateless14] semente 2: P=0.6058 R=0.9593 F1=0.7426 PR-AUC=0.6040 ROC-AUC=0.8037 | VP=65262 FP=42469 FN=2771 | n_teste=182152 (ataque 68033) | dobra 1
+2026-11-19 03:27:57 | INFO | [heavy__RF__smotenc__stateless14] semente 2: P=0.6046 R=0.8683 F1=0.7128 PR-AUC=0.6035 ROC-AUC=0.8033 | VP=59075 FP=38631 FN=8963 | n_teste=182159 (ataque 68038) | dobra 2
+2026-11-19 03:27:58 | INFO | [heavy__RF__smotenc__stateless14] semente 2: P=0.6060 R=0.9451 F1=0.7385 PR-AUC=0.6058 ROC-AUC=0.7958 | VP=202185 FP=131450 FN=11734 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:28:15 | INFO | [grupo/heavy] semente 3 dobra 0: n=556271 | treino 364313 (ataque 136073) | teste 191958 (ataque 77846, 40.6%; 1 vetores de ataque) | linhas de teste com vetor inédito: 191958
+2026-11-19 03:28:15 | INFO | [grupo/heavy] semente 3 dobra 1: n=556271 | treino 374114 (ataque 145881) | teste 182157 (ataque 68038, 37.4%; 38 vetores de ataque) | linhas de teste com vetor inédito: 182157
+2026-11-19 03:28:15 | INFO | [grupo/heavy] semente 3 dobra 2: n=556271 | treino 374115 (ataque 145884) | teste 182156 (ataque 68035, 37.3%; 50 vetores de ataque) | linhas de teste com vetor inédito: 182156
+2026-11-19 03:28:16 | INFO | [heavy__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77846 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:28:16 | INFO | [heavy__REF__limiarf1__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77846 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:28:16 | INFO | [heavy__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68038 | n_teste=182157 (ataque 68038) | dobra 1
+2026-11-19 03:28:16 | INFO | [heavy__REF__limiarf1__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68038 | n_teste=182157 (ataque 68038) | dobra 1
+2026-11-19 03:28:17 | INFO | [heavy__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68035 | n_teste=182156 (ataque 68035) | dobra 2
+2026-11-19 03:28:17 | INFO | [heavy__REF__limiarf1__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68035 | n_teste=182156 (ataque 68035) | dobra 2
+2026-11-19 03:28:17 | INFO | [heavy__REF__limiar05__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4847 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:28:18 | INFO | [heavy__REF__limiarf1__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4847 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:28:20 | INFO | [heavy__DT__original__stateless14] semente 3: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50360 FN=0 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:28:22 | INFO | [heavy__DT__original__stateless14] semente 3: P=0.6065 R=0.9025 F1=0.7254 PR-AUC=0.5893 ROC-AUC=0.7841 | VP=61403 FP=39842 FN=6635 | n_teste=182157 (ataque 68038) | dobra 1
+2026-11-19 03:28:24 | INFO | [heavy__DT__original__stateless14] semente 3: P=0.6034 R=0.4935 F1=0.5430 PR-AUC=0.4879 ROC-AUC=0.6512 | VP=33575 FP=22064 FN=34460 | n_teste=182156 (ataque 68035) | dobra 2
+2026-11-19 03:28:25 | INFO | [heavy__DT__original__stateless14] semente 3: P=0.6062 R=0.8079 F1=0.6927 PR-AUC=0.5661 ROC-AUC=0.7429 | VP=172824 FP=112266 FN=41095 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:28:32 | INFO | [heavy__DT__smotenc__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.6071 ROC-AUC=0.7791 | VP=0 FP=20 FN=77846 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:28:40 | INFO | [heavy__DT__smotenc__stateless14] semente 3: P=0.6056 R=0.9279 F1=0.7329 PR-AUC=0.5891 ROC-AUC=0.7830 | VP=63134 FP=41113 FN=4904 | n_teste=182157 (ataque 68038) | dobra 1
+2026-11-19 03:28:47 | INFO | [heavy__DT__smotenc__stateless14] semente 3: P=0.6044 R=0.8719 F1=0.7139 PR-AUC=0.5764 ROC-AUC=0.7680 | VP=59319 FP=38819 FN=8716 | n_teste=182156 (ataque 68035) | dobra 2
+2026-11-19 03:28:48 | INFO | [heavy__DT__smotenc__stateless14] semente 3: P=0.6050 R=0.5724 F1=0.5883 PR-AUC=0.5916 ROC-AUC=0.7766 | VP=122453 FP=79952 FN=91466 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:28:58 | INFO | [heavy__RF__original__stateless14] semente 3: P=0.6073 R=1.0000 F1=0.7556 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50346 FN=0 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:29:08 | INFO | [heavy__RF__original__stateless14] semente 3: P=0.6059 R=0.9094 F1=0.7272 PR-AUC=0.6058 ROC-AUC=0.8054 | VP=61872 FP=40248 FN=6166 | n_teste=182157 (ataque 68038) | dobra 1
+2026-11-19 03:29:18 | INFO | [heavy__RF__original__stateless14] semente 3: P=0.6046 R=0.8684 F1=0.7129 PR-AUC=0.6038 ROC-AUC=0.8036 | VP=59082 FP=38643 FN=8953 | n_teste=182156 (ataque 68035) | dobra 2
+2026-11-19 03:29:19 | INFO | [heavy__RF__original__stateless14] semente 3: P=0.6060 R=0.9293 F1=0.7336 PR-AUC=0.6046 ROC-AUC=0.7948 | VP=198800 FP=129237 FN=15119 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:29:35 | INFO | [heavy__RF__smotenc__stateless14] semente 3: P=0.6073 R=1.0000 F1=0.7557 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50345 FN=0 | n_teste=191958 (ataque 77846) | dobra 0
+2026-11-19 03:29:50 | INFO | [heavy__RF__smotenc__stateless14] semente 3: P=0.6058 R=0.9588 F1=0.7425 PR-AUC=0.6071 ROC-AUC=0.8065 | VP=65238 FP=42451 FN=2800 | n_teste=182157 (ataque 68038) | dobra 1
+2026-11-19 03:30:04 | INFO | [heavy__RF__smotenc__stateless14] semente 3: P=0.6045 R=0.8731 F1=0.7144 PR-AUC=0.6049 ROC-AUC=0.8048 | VP=59403 FP=38857 FN=8632 | n_teste=182156 (ataque 68035) | dobra 2
+2026-11-19 03:30:05 | INFO | [heavy__RF__smotenc__stateless14] semente 3: P=0.6060 R=0.9466 F1=0.7389 PR-AUC=0.6055 ROC-AUC=0.7958 | VP=202487 FP=131653 FN=11432 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:30:22 | INFO | [grupo/heavy] semente 4 dobra 0: n=556271 | treino 364312 (ataque 136072) | teste 191959 (ataque 77847, 40.6%; 2 vetores de ataque) | linhas de teste com vetor inédito: 191959
+2026-11-19 03:30:22 | INFO | [grupo/heavy] semente 4 dobra 1: n=556271 | treino 374110 (ataque 145877) | teste 182161 (ataque 68042, 37.4%; 41 vetores de ataque) | linhas de teste com vetor inédito: 182161
+2026-11-19 03:30:22 | INFO | [grupo/heavy] semente 4 dobra 2: n=556271 | treino 374120 (ataque 145889) | teste 182151 (ataque 68030, 37.3%; 46 vetores de ataque) | linhas de teste com vetor inédito: 182151
+2026-11-19 03:30:22 | INFO | [heavy__REF__limiar05__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77847 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:30:22 | INFO | [heavy__REF__limiarf1__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.4055 ROC-AUC=0.5000 | VP=0 FP=0 FN=77847 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:30:23 | INFO | [heavy__REF__limiar05__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68042 | n_teste=182161 (ataque 68042) | dobra 1
+2026-11-19 03:30:23 | INFO | [heavy__REF__limiarf1__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68042 | n_teste=182161 (ataque 68042) | dobra 1
+2026-11-19 03:30:23 | INFO | [heavy__REF__limiar05__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68030 | n_teste=182151 (ataque 68030) | dobra 2
+2026-11-19 03:30:23 | INFO | [heavy__REF__limiarf1__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3735 ROC-AUC=0.5000 | VP=0 FP=0 FN=68030 | n_teste=182151 (ataque 68030) | dobra 2
+2026-11-19 03:30:24 | INFO | [heavy__REF__limiar05__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4847 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:30:24 | INFO | [heavy__REF__limiarf1__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.3775 ROC-AUC=0.4847 | VP=0 FP=0 FN=213919 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:30:27 | INFO | [heavy__DT__original__stateless14] semente 4: P=0.6072 R=1.0000 F1=0.7556 PR-AUC=0.6072 ROC-AUC=0.7794 | VP=77846 FP=50359 FN=1 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:30:29 | INFO | [heavy__DT__original__stateless14] semente 4: P=0.6065 R=0.9029 F1=0.7256 PR-AUC=0.5888 ROC-AUC=0.7835 | VP=61435 FP=39861 FN=6607 | n_teste=182161 (ataque 68042) | dobra 1
+2026-11-19 03:30:31 | INFO | [heavy__DT__original__stateless14] semente 4: P=0.6045 R=0.8730 F1=0.7144 PR-AUC=0.5759 ROC-AUC=0.7667 | VP=59392 FP=38859 FN=8638 | n_teste=182151 (ataque 68030) | dobra 2
+2026-11-19 03:30:31 | INFO | [heavy__DT__original__stateless14] semente 4: P=0.6062 R=0.9287 F1=0.7336 PR-AUC=0.5924 ROC-AUC=0.7782 | VP=198673 FP=129079 FN=15246 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:30:39 | INFO | [heavy__DT__smotenc__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.6071 ROC-AUC=0.7792 | VP=0 FP=23 FN=77847 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:30:47 | INFO | [heavy__DT__smotenc__stateless14] semente 4: P=0.6065 R=0.9029 F1=0.7256 PR-AUC=0.5889 ROC-AUC=0.7838 | VP=61436 FP=39854 FN=6606 | n_teste=182161 (ataque 68042) | dobra 1
+2026-11-19 03:30:54 | INFO | [heavy__DT__smotenc__stateless14] semente 4: P=0.6045 R=0.8731 F1=0.7144 PR-AUC=0.5747 ROC-AUC=0.7630 | VP=59395 FP=38864 FN=8635 | n_teste=182151 (ataque 68030) | dobra 2
+2026-11-19 03:30:55 | INFO | [heavy__DT__smotenc__stateless14] semente 4: P=0.6055 R=0.5648 F1=0.5844 PR-AUC=0.5910 ROC-AUC=0.7755 | VP=120831 FP=78741 FN=93088 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:31:05 | INFO | [heavy__RF__original__stateless14] semente 4: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=0 FP=0 FN=77847 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:31:15 | INFO | [heavy__RF__original__stateless14] semente 4: P=0.6059 R=0.9411 F1=0.7372 PR-AUC=0.6072 ROC-AUC=0.8068 | VP=64035 FP=41643 FN=4007 | n_teste=182161 (ataque 68042) | dobra 1
+2026-11-19 03:31:24 | INFO | [heavy__RF__original__stateless14] semente 4: P=0.6046 R=0.8678 F1=0.7127 PR-AUC=0.6047 ROC-AUC=0.8041 | VP=59038 FP=38616 FN=8992 | n_teste=182151 (ataque 68030) | dobra 2
+2026-11-19 03:31:25 | INFO | [heavy__RF__original__stateless14] semente 4: P=0.6053 R=0.5753 F1=0.5899 PR-AUC=0.6055 ROC-AUC=0.7960 | VP=123073 FP=80259 FN=90846 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:31:42 | INFO | [heavy__RF__smotenc__stateless14] semente 4: P=0.6073 R=1.0000 F1=0.7556 PR-AUC=0.6073 ROC-AUC=0.7794 | VP=77846 FP=50347 FN=1 | n_teste=191959 (ataque 77847) | dobra 0
+2026-11-19 03:31:56 | INFO | [heavy__RF__smotenc__stateless14] semente 4: P=0.6058 R=0.9596 F1=0.7427 PR-AUC=0.6072 ROC-AUC=0.8068 | VP=65294 FP=42489 FN=2748 | n_teste=182161 (ataque 68042) | dobra 1
+2026-11-19 03:32:11 | INFO | [heavy__RF__smotenc__stateless14] semente 4: P=0.6046 R=0.8726 F1=0.7143 PR-AUC=0.6040 ROC-AUC=0.8034 | VP=59364 FP=38831 FN=8666 | n_teste=182151 (ataque 68030) | dobra 2
+2026-11-19 03:32:11 | INFO | [heavy__RF__smotenc__stateless14] semente 4: P=0.6060 R=0.9466 F1=0.7389 PR-AUC=0.6056 ROC-AUC=0.7963 | VP=202504 FP=131667 FN=11415 | n_teste=556271 (ataque 213919) | fora da dobra
+2026-11-19 03:32:11 | INFO | [grupo] concluído em 15.6 min
+2026-11-19 03:32:11 | INFO | ------------------------------ permutacao ------------------------------
+2026-11-19 03:32:57 | INFO | [light__DT__original__stateless14] semente 0: permutação em 43.8 s | maiores (PR-AUC): longest_word=0.0567, sld=0.0444, len=0.0406
+2026-11-19 03:33:42 | INFO | [light__DT__original__stateless14] semente 1: permutação em 44.2 s | maiores (PR-AUC): longest_word=0.0552, len=0.0452, sld=0.0376
+2026-11-19 03:34:28 | INFO | [light__DT__original__stateless14] semente 2: permutação em 44.4 s | maiores (PR-AUC): len=0.0569, longest_word=0.0512, sld=0.0400
+2026-11-19 03:35:13 | INFO | [light__DT__original__stateless14] semente 3: permutação em 44.1 s | maiores (PR-AUC): longest_word=0.0704, FQDN_count=0.0441, sld=0.0392
+2026-11-19 03:35:59 | INFO | [light__DT__original__stateless14] semente 4: permutação em 44.4 s | maiores (PR-AUC): longest_word=0.0625, FQDN_count=0.0436, len=0.0393
+2026-11-19 03:36:48 | INFO | [light__DT__smotenc__stateless14] semente 0: permutação em 44.2 s | maiores (PR-AUC): longest_word=0.0704, numeric=0.0430, FQDN_count=0.0419
+2026-11-19 03:37:38 | INFO | [light__DT__smotenc__stateless14] semente 1: permutação em 44.2 s | maiores (PR-AUC): longest_word=0.0502, len=0.0492, FQDN_count=0.0429
+2026-11-19 03:38:27 | INFO | [light__DT__smotenc__stateless14] semente 2: permutação em 44.1 s | maiores (PR-AUC): numeric=0.0724, longest_word=0.0709, sld=0.0405
+2026-11-19 03:39:17 | INFO | [light__DT__smotenc__stateless14] semente 3: permutação em 43.9 s | maiores (PR-AUC): sld=0.0708, longest_word=0.0698, FQDN_count=0.0443
+2026-11-19 03:40:06 | INFO | [light__DT__smotenc__stateless14] semente 4: permutação em 44.2 s | maiores (PR-AUC): longest_word=0.0605, sld=0.0604, FQDN_count=0.0488
+2026-11-19 03:41:12 | INFO | [light__RF__original__stateless14] semente 0: permutação em 63.2 s | maiores (PR-AUC): entropy=0.0008, subdomain=-0.0001, len=-0.0002
+2026-11-19 03:42:19 | INFO | [light__RF__original__stateless14] semente 1: permutação em 63.4 s | maiores (PR-AUC): upper=0.0007, subdomain=0.0001, sld=-0.0009
+2026-11-19 03:43:25 | INFO | [light__RF__original__stateless14] semente 2: permutação em 63.6 s | maiores (PR-AUC): upper=0.0001, labels=-0.0007, labels_max=-0.0008
+2026-11-19 03:44:31 | INFO | [light__RF__original__stateless14] semente 3: permutação em 63.4 s | maiores (PR-AUC): len=0.0019, upper=0.0008, sld=0.0004
+2026-11-19 03:45:37 | INFO | [light__RF__original__stateless14] semente 4: permutação em 63.4 s | maiores (PR-AUC): upper=0.0008, labels=0.0005, longest_word=0.0004
+2026-11-19 03:46:49 | INFO | [light__RF__smotenc__stateless14] semente 0: permutação em 64.0 s | maiores (PR-AUC): entropy=0.0011, subdomain=-0.0006, upper=-0.0007
+2026-11-19 03:48:02 | INFO | [light__RF__smotenc__stateless14] semente 1: permutação em 64.1 s | maiores (PR-AUC): upper=0.0007, labels_max=-0.0002, len=-0.0010
+2026-11-19 03:49:14 | INFO | [light__RF__smotenc__stateless14] semente 2: permutação em 63.9 s | maiores (PR-AUC): upper=0.0004, special=-0.0010, longest_word=-0.0011
+2026-11-19 03:50:26 | INFO | [light__RF__smotenc__stateless14] semente 3: permutação em 64.1 s | maiores (PR-AUC): upper=0.0000, longest_word=-0.0005, subdomain=-0.0009
+2026-11-19 03:51:38 | INFO | [light__RF__smotenc__stateless14] semente 4: permutação em 64.1 s | maiores (PR-AUC): upper=0.0010, lower=0.0008, longest_word=0.0008
+2026-11-19 03:52:56 | INFO | [heavy__DT__original__stateless14] semente 0: permutação em 75.1 s | maiores (PR-AUC): longest_word=0.2107, subdomain_length=0.0808, FQDN_count=0.0490
+2026-11-19 03:54:14 | INFO | [heavy__DT__original__stateless14] semente 1: permutação em 75.1 s | maiores (PR-AUC): longest_word=0.1135, sld=0.0962, subdomain_length=0.0847
+2026-11-19 03:55:31 | INFO | [heavy__DT__original__stateless14] semente 2: permutação em 74.8 s | maiores (PR-AUC): longest_word=0.0786, lower=0.0512, FQDN_count=0.0481
+2026-11-19 03:56:49 | INFO | [heavy__DT__original__stateless14] semente 3: permutação em 74.9 s | maiores (PR-AUC): longest_word=0.1163, sld=0.0797, FQDN_count=0.0480
+2026-11-19 03:58:06 | INFO | [heavy__DT__original__stateless14] semente 4: permutação em 74.8 s | maiores (PR-AUC): longest_word=0.1206, FQDN_count=0.0671, sld=0.0451
+2026-11-19 03:59:28 | INFO | [heavy__DT__smotenc__stateless14] semente 0: permutação em 73.8 s | maiores (PR-AUC): longest_word=0.0618, FQDN_count=0.0484, lower=0.0448
+2026-11-19 04:00:50 | INFO | [heavy__DT__smotenc__stateless14] semente 1: permutação em 73.7 s | maiores (PR-AUC): sld=0.1105, longest_word=0.0944, subdomain_length=0.0807
+2026-11-19 04:02:13 | INFO | [heavy__DT__smotenc__stateless14] semente 2: permutação em 74.2 s | maiores (PR-AUC): longest_word=0.0784, FQDN_count=0.0483, lower=0.0442
+2026-11-19 04:03:35 | INFO | [heavy__DT__smotenc__stateless14] semente 3: permutação em 73.9 s | maiores (PR-AUC): longest_word=0.0956, FQDN_count=0.0497, lower=0.0444
+2026-11-19 04:04:58 | INFO | [heavy__DT__smotenc__stateless14] semente 4: permutação em 73.8 s | maiores (PR-AUC): longest_word=0.0995, special=0.0492, numeric=0.0414
+2026-11-19 04:07:27 | INFO | [heavy__RF__original__stateless14] semente 0: permutação em 136.4 s | maiores (PR-AUC): entropy=0.0022, len=0.0015, longest_word=0.0015
+2026-11-19 04:09:55 | INFO | [heavy__RF__original__stateless14] semente 1: permutação em 136.4 s | maiores (PR-AUC): len=0.0010, subdomain_length=0.0009, longest_word=0.0007
+2026-11-19 04:12:24 | INFO | [heavy__RF__original__stateless14] semente 2: permutação em 136.5 s | maiores (PR-AUC): len=0.0007, entropy=0.0006, subdomain_length=0.0006
+2026-11-19 04:14:53 | INFO | [heavy__RF__original__stateless14] semente 3: permutação em 136.5 s | maiores (PR-AUC): len=0.0013, labels_average=0.0013, entropy=0.0010
+2026-11-19 04:17:22 | INFO | [heavy__RF__original__stateless14] semente 4: permutação em 136.6 s | maiores (PR-AUC): upper=-0.0000, len=-0.0004, longest_word=-0.0005
+2026-11-19 04:19:58 | INFO | [heavy__RF__smotenc__stateless14] semente 0: permutação em 136.6 s | maiores (PR-AUC): entropy=0.0015, sld=0.0014, longest_word=0.0006
+2026-11-19 04:22:35 | INFO | [heavy__RF__smotenc__stateless14] semente 1: permutação em 137.1 s | maiores (PR-AUC): entropy=0.0008, numeric=0.0007, longest_word=0.0004
+2026-11-19 04:25:11 | INFO | [heavy__RF__smotenc__stateless14] semente 2: permutação em 136.7 s | maiores (PR-AUC): longest_word=0.0008, entropy=0.0008, FQDN_count=0.0008
+2026-11-19 04:27:48 | INFO | [heavy__RF__smotenc__stateless14] semente 3: permutação em 137.7 s | maiores (PR-AUC): sld=0.0014, longest_word=0.0010, entropy=0.0009
+2026-11-19 04:30:27 | INFO | [heavy__RF__smotenc__stateless14] semente 4: permutação em 137.1 s | maiores (PR-AUC): upper=0.0002, entropy=0.0002, longest_word=-0.0001
+2026-11-19 04:30:27 | INFO | [permutacao] concluído em 58.3 min
+2026-11-19 04:30:27 | INFO | ------------------------------ balanceamento ------------------------------
+2026-11-19 04:30:28 | INFO | [light__DT__classweight__stateless14] semente 0: P=0.2700 R=0.9995 F1=0.4252 PR-AUC=0.2693 ROC-AUC=0.7939 | VP=10879 FP=29408 FN=5 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:30:30 | INFO | [light__DT__classweight__stateless14] semente 1: P=0.2709 R=0.9996 F1=0.4263 PR-AUC=0.2677 ROC-AUC=0.7937 | VP=10880 FP=29276 FN=4 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:30:31 | INFO | [light__DT__classweight__stateless14] semente 2: P=0.2722 R=0.9995 F1=0.4278 PR-AUC=0.2688 ROC-AUC=0.7941 | VP=10879 FP=29095 FN=5 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:30:32 | INFO | [light__DT__classweight__stateless14] semente 3: P=0.2713 R=0.9996 F1=0.4267 PR-AUC=0.2711 ROC-AUC=0.7960 | VP=10880 FP=29228 FN=4 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:30:34 | INFO | [light__DT__classweight__stateless14] semente 4: P=0.2714 R=0.9998 F1=0.4269 PR-AUC=0.2703 ROC-AUC=0.7952 | VP=10882 FP=29220 FN=2 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:30:38 | INFO | [light__DT__original_limiar__stateless14] semente 0: P=0.2660 R=0.9692 F1=0.4174 PR-AUC=0.2686 ROC-AUC=0.7932 | VP=10549 FP=29114 FN=335 | n_teste=82581 (ataque 10884) | limiar=0.2633 (ajuste 3.3 s)
+2026-11-19 04:30:43 | INFO | [light__DT__original_limiar__stateless14] semente 1: P=0.2705 R=0.9989 F1=0.4257 PR-AUC=0.2672 ROC-AUC=0.7934 | VP=10872 FP=29323 FN=12 | n_teste=82581 (ataque 10884) | limiar=0.1927 (ajuste 3.2 s)
+2026-11-19 04:30:47 | INFO | [light__DT__original_limiar__stateless14] semente 2: P=0.2720 R=0.9990 F1=0.4276 PR-AUC=0.2686 ROC-AUC=0.7939 | VP=10873 FP=29098 FN=11 | n_teste=82581 (ataque 10884) | limiar=0.1889 (ajuste 3.2 s)
+2026-11-19 04:30:52 | INFO | [light__DT__original_limiar__stateless14] semente 3: P=0.2714 R=0.9993 F1=0.4269 PR-AUC=0.2712 ROC-AUC=0.7963 | VP=10876 FP=29196 FN=8 | n_teste=82581 (ataque 10884) | limiar=0.2286 (ajuste 3.2 s)
+2026-11-19 04:30:56 | INFO | [light__DT__original_limiar__stateless14] semente 4: P=0.2713 R=0.9991 F1=0.4268 PR-AUC=0.2707 ROC-AUC=0.7954 | VP=10874 FP=29203 FN=10 | n_teste=82581 (ataque 10884) | limiar=0.1786 (ajuste 3.1 s)
+2026-11-19 04:31:22 | INFO | [light__DT__smotenc_limiar__stateless14] semente 0: P=0.2664 R=0.9808 F1=0.4191 PR-AUC=0.2692 ROC-AUC=0.7937 | VP=10675 FP=29389 FN=209 | n_teste=82581 (ataque 10884) | limiar=0.6880 (ajuste 20.3 s)
+2026-11-19 04:31:48 | INFO | [light__DT__smotenc_limiar__stateless14] semente 1: P=0.2709 R=0.9983 F1=0.4261 PR-AUC=0.2672 ROC-AUC=0.7932 | VP=10866 FP=29251 FN=18 | n_teste=82581 (ataque 10884) | limiar=0.6303 (ajuste 20.2 s)
+2026-11-19 04:32:13 | INFO | [light__DT__smotenc_limiar__stateless14] semente 2: P=0.2723 R=0.9986 F1=0.4279 PR-AUC=0.2696 ROC-AUC=0.7944 | VP=10869 FP=29050 FN=15 | n_teste=82581 (ataque 10884) | limiar=0.6298 (ajuste 20.4 s)
+2026-11-19 04:32:40 | INFO | [light__DT__smotenc_limiar__stateless14] semente 3: P=0.2715 R=0.9993 F1=0.4270 PR-AUC=0.2713 ROC-AUC=0.7961 | VP=10876 FP=29187 FN=8 | n_teste=82581 (ataque 10884) | limiar=0.6583 (ajuste 20.6 s)
+2026-11-19 04:33:06 | INFO | [light__DT__smotenc_limiar__stateless14] semente 4: P=0.2714 R=0.9987 F1=0.4268 PR-AUC=0.2705 ROC-AUC=0.7957 | VP=10870 FP=29180 FN=14 | n_teste=82581 (ataque 10884) | limiar=0.5697 (ajuste 20.4 s)
+2026-11-19 04:33:11 | INFO | [light__DT__classweight_limiar__stateless14] semente 0: P=0.2701 R=0.9989 F1=0.4253 PR-AUC=0.2693 ROC-AUC=0.7939 | VP=10872 FP=29373 FN=12 | n_teste=82581 (ataque 10884) | limiar=0.6032 (ajuste 3.7 s)
+2026-11-19 04:33:15 | INFO | [light__DT__classweight_limiar__stateless14] semente 1: P=0.2711 R=0.9989 F1=0.4264 PR-AUC=0.2677 ROC-AUC=0.7937 | VP=10872 FP=29236 FN=12 | n_teste=82581 (ataque 10884) | limiar=0.6112 (ajuste 3.4 s)
+2026-11-19 04:33:20 | INFO | [light__DT__classweight_limiar__stateless14] semente 2: P=0.2723 R=0.9990 F1=0.4279 PR-AUC=0.2688 ROC-AUC=0.7941 | VP=10873 FP=29058 FN=11 | n_teste=82581 (ataque 10884) | limiar=0.6054 (ajuste 3.6 s)
+2026-11-19 04:33:25 | INFO | [light__DT__classweight_limiar__stateless14] semente 3: P=0.2715 R=0.9993 F1=0.4269 PR-AUC=0.2711 ROC-AUC=0.7960 | VP=10876 FP=29190 FN=8 | n_teste=82581 (ataque 10884) | limiar=0.6681 (ajuste 3.5 s)
+2026-11-19 04:33:30 | INFO | [light__DT__classweight_limiar__stateless14] semente 4: P=0.2715 R=0.9991 F1=0.4269 PR-AUC=0.2703 ROC-AUC=0.7952 | VP=10874 FP=29182 FN=10 | n_teste=82581 (ataque 10884) | limiar=0.5888 (ajuste 3.4 s)
+2026-11-19 04:33:33 | INFO | [light__RF__classweight__stateless14] semente 0: P=0.2702 R=0.9994 F1=0.4254 PR-AUC=0.2703 ROC-AUC=0.7951 | VP=10878 FP=29378 FN=6 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:33:36 | INFO | [light__RF__classweight__stateless14] semente 1: P=0.2714 R=0.9991 F1=0.4269 PR-AUC=0.2690 ROC-AUC=0.7947 | VP=10874 FP=29185 FN=10 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:33:39 | INFO | [light__RF__classweight__stateless14] semente 2: P=0.2722 R=0.9993 F1=0.4278 PR-AUC=0.2688 ROC-AUC=0.7942 | VP=10876 FP=29081 FN=8 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:33:42 | INFO | [light__RF__classweight__stateless14] semente 3: P=0.2714 R=0.9996 F1=0.4269 PR-AUC=0.2684 ROC-AUC=0.7943 | VP=10880 FP=29204 FN=4 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:33:45 | INFO | [light__RF__classweight__stateless14] semente 4: P=0.2715 R=0.9994 F1=0.4270 PR-AUC=0.2701 ROC-AUC=0.7953 | VP=10878 FP=29194 FN=6 | n_teste=82581 (ataque 10884) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:33:56 | INFO | [light__RF__original_limiar__stateless14] semente 0: P=0.2703 R=0.9991 F1=0.4255 PR-AUC=0.2700 ROC-AUC=0.7945 | VP=10874 FP=29359 FN=10 | n_teste=82581 (ataque 10884) | limiar=0.1677 (ajuste 8.4 s)
+2026-11-19 04:34:07 | INFO | [light__RF__original_limiar__stateless14] semente 1: P=0.2715 R=0.9989 F1=0.4269 PR-AUC=0.2680 ROC-AUC=0.7941 | VP=10872 FP=29173 FN=12 | n_teste=82581 (ataque 10884) | limiar=0.1815 (ajuste 7.9 s)
+2026-11-19 04:34:18 | INFO | [light__RF__original_limiar__stateless14] semente 2: P=0.2723 R=0.9987 F1=0.4280 PR-AUC=0.2698 ROC-AUC=0.7947 | VP=10870 FP=29045 FN=14 | n_teste=82581 (ataque 10884) | limiar=0.1769 (ajuste 8.1 s)
+2026-11-19 04:34:29 | INFO | [light__RF__original_limiar__stateless14] semente 3: P=0.2716 R=0.9993 F1=0.4271 PR-AUC=0.2702 ROC-AUC=0.7955 | VP=10876 FP=29166 FN=8 | n_teste=82581 (ataque 10884) | limiar=0.2098 (ajuste 8.3 s)
+2026-11-19 04:34:40 | INFO | [light__RF__original_limiar__stateless14] semente 4: P=0.2716 R=0.9988 F1=0.4270 PR-AUC=0.2703 ROC-AUC=0.7954 | VP=10871 FP=29160 FN=13 | n_teste=82581 (ataque 10884) | limiar=0.1811 (ajuste 8.1 s)
+2026-11-19 04:35:18 | INFO | [light__RF__smotenc_limiar__stateless14] semente 0: P=0.2702 R=0.9995 F1=0.4254 PR-AUC=0.2702 ROC-AUC=0.7949 | VP=10879 FP=29383 FN=5 | n_teste=82581 (ataque 10884) | limiar=0.2087 (ajuste 29.3 s)
+2026-11-19 04:35:55 | INFO | [light__RF__smotenc_limiar__stateless14] semente 1: P=0.2715 R=0.9983 F1=0.4269 PR-AUC=0.2682 ROC-AUC=0.7941 | VP=10866 FP=29159 FN=18 | n_teste=82581 (ataque 10884) | limiar=0.6266 (ajuste 29.1 s)
+2026-11-19 04:36:32 | INFO | [light__RF__smotenc_limiar__stateless14] semente 2: P=0.2722 R=0.9995 F1=0.4279 PR-AUC=0.2691 ROC-AUC=0.7942 | VP=10879 FP=29089 FN=5 | n_teste=82581 (ataque 10884) | limiar=0.1836 (ajuste 29.2 s)
+2026-11-19 04:37:10 | INFO | [light__RF__smotenc_limiar__stateless14] semente 3: P=0.2716 R=0.9991 F1=0.4271 PR-AUC=0.2695 ROC-AUC=0.7955 | VP=10874 FP=29165 FN=10 | n_teste=82581 (ataque 10884) | limiar=0.6217 (ajuste 29.5 s)
+2026-11-19 04:37:47 | INFO | [light__RF__smotenc_limiar__stateless14] semente 4: P=0.2716 R=0.9990 F1=0.4271 PR-AUC=0.2712 ROC-AUC=0.7963 | VP=10873 FP=29156 FN=11 | n_teste=82581 (ataque 10884) | limiar=0.5636 (ajuste 29.0 s)
+2026-11-19 04:37:59 | INFO | [light__RF__classweight_limiar__stateless14] semente 0: P=0.2702 R=0.9995 F1=0.4254 PR-AUC=0.2703 ROC-AUC=0.7951 | VP=10879 FP=29383 FN=5 | n_teste=82581 (ataque 10884) | limiar=0.2457 (ajuste 8.3 s)
+2026-11-19 04:38:09 | INFO | [light__RF__classweight_limiar__stateless14] semente 1: P=0.2715 R=0.9989 F1=0.4270 PR-AUC=0.2690 ROC-AUC=0.7947 | VP=10872 FP=29168 FN=12 | n_teste=82581 (ataque 10884) | limiar=0.6078 (ajuste 7.9 s)
+2026-11-19 04:38:20 | INFO | [light__RF__classweight_limiar__stateless14] semente 2: P=0.2723 R=0.9987 F1=0.4280 PR-AUC=0.2688 ROC-AUC=0.7942 | VP=10870 FP=29044 FN=14 | n_teste=82581 (ataque 10884) | limiar=0.6070 (ajuste 8.2 s)
+2026-11-19 04:38:32 | INFO | [light__RF__classweight_limiar__stateless14] semente 3: P=0.2716 R=0.9993 F1=0.4271 PR-AUC=0.2684 ROC-AUC=0.7943 | VP=10876 FP=29165 FN=8 | n_teste=82581 (ataque 10884) | limiar=0.6407 (ajuste 8.3 s)
+2026-11-19 04:38:43 | INFO | [light__RF__classweight_limiar__stateless14] semente 4: P=0.2716 R=0.9987 F1=0.4270 PR-AUC=0.2701 ROC-AUC=0.7953 | VP=10870 FP=29156 FN=14 | n_teste=82581 (ataque 10884) | limiar=0.5848 (ajuste 8.2 s)
+2026-11-19 04:38:46 | INFO | [heavy__DT__classweight__stateless14] semente 0: P=0.6075 R=0.9999 F1=0.7558 PR-AUC=0.6092 ROC-AUC=0.7989 | VP=64170 FP=41460 FN=6 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:38:50 | INFO | [heavy__DT__classweight__stateless14] semente 1: P=0.6053 R=0.9997 F1=0.7540 PR-AUC=0.6058 ROC-AUC=0.7965 | VP=64159 FP=41841 FN=17 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:38:53 | INFO | [heavy__DT__classweight__stateless14] semente 2: P=0.6057 R=0.9998 F1=0.7544 PR-AUC=0.6062 ROC-AUC=0.7965 | VP=64166 FP=41775 FN=10 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:38:56 | INFO | [heavy__DT__classweight__stateless14] semente 3: P=0.6048 R=0.9999 F1=0.7537 PR-AUC=0.6063 ROC-AUC=0.7967 | VP=64169 FP=41925 FN=7 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:38:59 | INFO | [heavy__DT__classweight__stateless14] semente 4: P=0.6063 R=0.9999 F1=0.7548 PR-AUC=0.6052 ROC-AUC=0.7961 | VP=64167 FP=41674 FN=9 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:39:10 | INFO | [heavy__DT__original_limiar__stateless14] semente 0: P=0.6043 R=1.0000 F1=0.7534 PR-AUC=0.6004 ROC-AUC=0.7936 | VP=64173 FP=42018 FN=3 | n_teste=166882 (ataque 64176) | limiar=0.2857 (ajuste 7.8 s)
+2026-11-19 04:39:20 | INFO | [heavy__DT__original_limiar__stateless14] semente 1: P=0.6053 R=0.9995 F1=0.7540 PR-AUC=0.6058 ROC-AUC=0.7965 | VP=64143 FP=41828 FN=33 | n_teste=166882 (ataque 64176) | limiar=0.5122 (ajuste 8.0 s)
+2026-11-19 04:39:31 | INFO | [heavy__DT__original_limiar__stateless14] semente 2: P=0.6028 R=0.9999 F1=0.7522 PR-AUC=0.6062 ROC-AUC=0.7965 | VP=64167 FP=42277 FN=9 | n_teste=166882 (ataque 64176) | limiar=0.3333 (ajuste 7.7 s)
+2026-11-19 04:39:43 | INFO | [heavy__DT__original_limiar__stateless14] semente 3: P=0.6048 R=0.9999 F1=0.7537 PR-AUC=0.6064 ROC-AUC=0.7967 | VP=64170 FP=41931 FN=6 | n_teste=166882 (ataque 64176) | limiar=0.2500 (ajuste 8.8 s)
+2026-11-19 04:39:53 | INFO | [heavy__DT__original_limiar__stateless14] semente 4: P=0.6056 R=1.0000 F1=0.7543 PR-AUC=0.6033 ROC-AUC=0.7953 | VP=64173 FP=41793 FN=3 | n_teste=166882 (ataque 64176) | limiar=0.1667 (ajuste 7.3 s)
+2026-11-19 04:40:32 | INFO | [heavy__DT__smotenc_limiar__stateless14] semente 0: P=0.6074 R=0.9996 F1=0.7557 PR-AUC=0.6079 ROC-AUC=0.7983 | VP=64148 FP=41456 FN=28 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 31.0 s)
+2026-11-19 04:41:11 | INFO | [heavy__DT__smotenc_limiar__stateless14] semente 1: P=0.6052 R=0.9997 F1=0.7540 PR-AUC=0.6052 ROC-AUC=0.7961 | VP=64157 FP=41850 FN=19 | n_teste=166882 (ataque 64176) | limiar=0.5106 (ajuste 30.7 s)
+2026-11-19 04:41:50 | INFO | [heavy__DT__smotenc_limiar__stateless14] semente 2: P=0.6057 R=0.9996 F1=0.7543 PR-AUC=0.6062 ROC-AUC=0.7966 | VP=64152 FP=41769 FN=24 | n_teste=166882 (ataque 64176) | limiar=0.4615 (ajuste 30.6 s)
+2026-11-19 04:42:30 | INFO | [heavy__DT__smotenc_limiar__stateless14] semente 3: P=0.6048 R=0.9998 F1=0.7537 PR-AUC=0.6061 ROC-AUC=0.7967 | VP=64163 FP=41928 FN=13 | n_teste=166882 (ataque 64176) | limiar=0.3333 (ajuste 30.7 s)
+2026-11-19 04:43:09 | INFO | [heavy__DT__smotenc_limiar__stateless14] semente 4: P=0.6062 R=0.9997 F1=0.7547 PR-AUC=0.6050 ROC-AUC=0.7962 | VP=64158 FP=41679 FN=18 | n_teste=166882 (ataque 64176) | limiar=0.4000 (ajuste 30.8 s)
+2026-11-19 04:43:21 | INFO | [heavy__DT__classweight_limiar__stateless14] semente 0: P=0.6075 R=1.0000 F1=0.7558 PR-AUC=0.6092 ROC-AUC=0.7989 | VP=64173 FP=41463 FN=3 | n_teste=166882 (ataque 64176) | limiar=0.3903 (ajuste 9.1 s)
+2026-11-19 04:43:34 | INFO | [heavy__DT__classweight_limiar__stateless14] semente 1: P=0.6053 R=0.9997 F1=0.7540 PR-AUC=0.6058 ROC-AUC=0.7965 | VP=64159 FP=41841 FN=17 | n_teste=166882 (ataque 64176) | limiar=0.4899 (ajuste 9.4 s)
+2026-11-19 04:43:46 | INFO | [heavy__DT__classweight_limiar__stateless14] semente 2: P=0.6057 R=0.9998 F1=0.7544 PR-AUC=0.6062 ROC-AUC=0.7965 | VP=64166 FP=41775 FN=10 | n_teste=166882 (ataque 64176) | limiar=0.4445 (ajuste 8.9 s)
+2026-11-19 04:43:58 | INFO | [heavy__DT__classweight_limiar__stateless14] semente 3: P=0.6048 R=0.9999 F1=0.7537 PR-AUC=0.6063 ROC-AUC=0.7967 | VP=64169 FP=41929 FN=7 | n_teste=166882 (ataque 64176) | limiar=0.3479 (ajuste 9.4 s)
+2026-11-19 04:44:10 | INFO | [heavy__DT__classweight_limiar__stateless14] semente 4: P=0.6062 R=1.0000 F1=0.7548 PR-AUC=0.6052 ROC-AUC=0.7961 | VP=64173 FP=41686 FN=3 | n_teste=166882 (ataque 64176) | limiar=0.2425 (ajuste 8.4 s)
+2026-11-19 04:44:25 | INFO | [heavy__RF__classweight__stateless14] semente 0: P=0.6075 R=0.9993 F1=0.7556 PR-AUC=0.6092 ROC-AUC=0.7991 | VP=64132 FP=41436 FN=44 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:44:39 | INFO | [heavy__RF__classweight__stateless14] semente 1: P=0.6053 R=0.9993 F1=0.7539 PR-AUC=0.6060 ROC-AUC=0.7966 | VP=64133 FP=41825 FN=43 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:44:54 | INFO | [heavy__RF__classweight__stateless14] semente 2: P=0.6057 R=0.9993 F1=0.7542 PR-AUC=0.6061 ROC-AUC=0.7965 | VP=64132 FP=41755 FN=44 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:45:09 | INFO | [heavy__RF__classweight__stateless14] semente 3: P=0.6049 R=0.9997 F1=0.7537 PR-AUC=0.6055 ROC-AUC=0.7960 | VP=64154 FP=41907 FN=22 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:45:24 | INFO | [heavy__RF__classweight__stateless14] semente 4: P=0.6063 R=0.9995 F1=0.7547 PR-AUC=0.6051 ROC-AUC=0.7962 | VP=64145 FP=41657 FN=31 | n_teste=166882 (ataque 64176) | limiar=0.5000 (ajuste 0.0 s)
+2026-11-19 04:46:20 | INFO | [heavy__RF__original_limiar__stateless14] semente 0: P=0.6075 R=0.9996 F1=0.7557 PR-AUC=0.6092 ROC-AUC=0.7990 | VP=64150 FP=41443 FN=26 | n_teste=166882 (ataque 64176) | limiar=0.3212 (ajuste 43.6 s)
+2026-11-19 04:47:16 | INFO | [heavy__RF__original_limiar__stateless14] semente 1: P=0.6053 R=0.9996 F1=0.7540 PR-AUC=0.6060 ROC-AUC=0.7966 | VP=64148 FP=41831 FN=28 | n_teste=166882 (ataque 64176) | limiar=0.2866 (ajuste 42.8 s)
+2026-11-19 04:48:12 | INFO | [heavy__RF__original_limiar__stateless14] semente 2: P=0.6056 R=0.9996 F1=0.7543 PR-AUC=0.6062 ROC-AUC=0.7965 | VP=64151 FP=41773 FN=25 | n_teste=166882 (ataque 64176) | limiar=0.2041 (ajuste 42.8 s)
+2026-11-19 04:49:09 | INFO | [heavy__RF__original_limiar__stateless14] semente 3: P=0.6048 R=0.9997 F1=0.7537 PR-AUC=0.6060 ROC-AUC=0.7964 | VP=64157 FP=41916 FN=19 | n_teste=166882 (ataque 64176) | limiar=0.2626 (ajuste 43.7 s)
+2026-11-19 04:50:04 | INFO | [heavy__RF__original_limiar__stateless14] semente 4: P=0.6063 R=0.9997 F1=0.7548 PR-AUC=0.6051 ROC-AUC=0.7961 | VP=64156 FP=41663 FN=20 | n_teste=166882 (ataque 64176) | limiar=0.3135 (ajuste 42.7 s)
+2026-11-19 04:51:35 | INFO | [heavy__RF__smotenc_limiar__stateless14] semente 0: P=0.6075 R=0.9999 F1=0.7558 PR-AUC=0.6081 ROC-AUC=0.7979 | VP=64171 FP=41456 FN=5 | n_teste=166882 (ataque 64176) | limiar=0.3135 (ajuste 71.1 s)
+2026-11-19 04:53:07 | INFO | [heavy__RF__smotenc_limiar__stateless14] semente 1: P=0.6053 R=0.9999 F1=0.7541 PR-AUC=0.6061 ROC-AUC=0.7965 | VP=64167 FP=41839 FN=9 | n_teste=166882 (ataque 64176) | limiar=0.4457 (ajuste 71.5 s)
+2026-11-19 04:54:38 | INFO | [heavy__RF__smotenc_limiar__stateless14] semente 2: P=0.6057 R=0.9999 F1=0.7544 PR-AUC=0.6065 ROC-AUC=0.7968 | VP=64169 FP=41775 FN=7 | n_teste=166882 (ataque 64176) | limiar=0.3369 (ajuste 71.3 s)
+2026-11-19 04:56:10 | INFO | [heavy__RF__smotenc_limiar__stateless14] semente 3: P=0.6049 R=0.9999 F1=0.7538 PR-AUC=0.6061 ROC-AUC=0.7965 | VP=64169 FP=41916 FN=7 | n_teste=166882 (ataque 64176) | limiar=0.3109 (ajuste 71.9 s)
+2026-11-19 04:57:44 | INFO | [heavy__RF__smotenc_limiar__stateless14] semente 4: P=0.6063 R=0.9999 F1=0.7549 PR-AUC=0.6054 ROC-AUC=0.7964 | VP=64167 FP=41669 FN=9 | n_teste=166882 (ataque 64176) | limiar=0.3696 (ajuste 71.3 s)
+2026-11-19 04:58:48 | INFO | [heavy__RF__classweight_limiar__stateless14] semente 0: P=0.6075 R=0.9996 F1=0.7557 PR-AUC=0.6092 ROC-AUC=0.7991 | VP=64150 FP=41444 FN=26 | n_teste=166882 (ataque 64176) | limiar=0.4017 (ajuste 49.5 s)
+2026-11-19 04:59:52 | INFO | [heavy__RF__classweight_limiar__stateless14] semente 1: P=0.6053 R=0.9996 F1=0.7540 PR-AUC=0.6060 ROC-AUC=0.7966 | VP=64148 FP=41831 FN=28 | n_teste=166882 (ataque 64176) | limiar=0.3972 (ajuste 49.0 s)
+2026-11-19 05:00:56 | INFO | [heavy__RF__classweight_limiar__stateless14] semente 2: P=0.6056 R=0.9995 F1=0.7543 PR-AUC=0.6061 ROC-AUC=0.7965 | VP=64146 FP=41768 FN=30 | n_teste=166882 (ataque 64176) | limiar=0.2973 (ajuste 49.0 s)
+2026-11-19 05:02:01 | INFO | [heavy__RF__classweight_limiar__stateless14] semente 3: P=0.6048 R=0.9997 F1=0.7537 PR-AUC=0.6055 ROC-AUC=0.7960 | VP=64158 FP=41916 FN=18 | n_teste=166882 (ataque 64176) | limiar=0.2852 (ajuste 50.0 s)
+2026-11-19 05:03:04 | INFO | [heavy__RF__classweight_limiar__stateless14] semente 4: P=0.6062 R=0.9998 F1=0.7547 PR-AUC=0.6051 ROC-AUC=0.7962 | VP=64160 FP=41683 FN=16 | n_teste=166882 (ataque 64176) | limiar=0.2320 (ajuste 48.9 s)
+2026-11-19 05:03:04 | INFO | [balanceamento] concluído em 32.6 min
+2026-11-19 05:03:04 | INFO | ------------------------------ cruzado ------------------------------
+2026-11-19 05:03:04 | INFO | [cruzado heavy_para_light] semente 0: teste = 87472 linhas de light (ataque 36280, 41.5%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 3568
+2026-11-19 05:03:05 | INFO | [heavy_para_light__REF__limiar05__stateless14] semente 0: P=0.6448 R=0.9997 F1=0.7840 PR-AUC=0.6452 ROC-AUC=0.8047 | VP=36269 FP=19976 FN=11 | n_teste=87472 (ataque 36280)
+2026-11-19 05:03:05 | INFO | [heavy_para_light__REF__limiarf1__stateless14] semente 0: P=0.6448 R=0.9998 F1=0.7839 PR-AUC=0.6452 ROC-AUC=0.8047 | VP=36272 FP=19985 FN=8 | n_teste=87472 (ataque 36280)
+2026-11-19 05:03:08 | INFO | [heavy_para_light__DT__original__stateless14] semente 0: P=0.6432 R=0.9997 F1=0.7828 PR-AUC=0.6405 ROC-AUC=0.8020 | VP=36269 FP=20115 FN=11 | n_teste=87472 (ataque 36280)
+2026-11-19 05:03:16 | INFO | [heavy_para_light__DT__smotenc__stateless14] semente 0: P=0.6447 R=0.9994 F1=0.7838 PR-AUC=0.6449 ROC-AUC=0.8048 | VP=36260 FP=19983 FN=20 | n_teste=87472 (ataque 36280)
+2026-11-19 05:03:29 | INFO | [heavy_para_light__RF__original__stateless14] semente 0: P=0.6448 R=0.9993 F1=0.7838 PR-AUC=0.6450 ROC-AUC=0.8047 | VP=36256 FP=19974 FN=24 | n_teste=87472 (ataque 36280)
+2026-11-19 05:03:50 | INFO | [heavy_para_light__RF__smotenc__stateless14] semente 0: P=0.6448 R=0.9998 F1=0.7839 PR-AUC=0.6448 ROC-AUC=0.8046 | VP=36271 FP=19984 FN=9 | n_teste=87472 (ataque 36280)
+2026-11-19 05:03:50 | INFO | [cruzado heavy_para_light] semente 1: teste = 87472 linhas de light (ataque 36280, 41.5%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 3518
+2026-11-19 05:03:50 | INFO | [heavy_para_light__REF__limiar05__stateless14] semente 1: P=0.6448 R=0.9996 F1=0.7839 PR-AUC=0.6450 ROC-AUC=0.8048 | VP=36267 FP=19978 FN=13 | n_teste=87472 (ataque 36280)
+2026-11-19 05:03:50 | INFO | [heavy_para_light__REF__limiarf1__stateless14] semente 1: P=0.6448 R=0.9998 F1=0.7840 PR-AUC=0.6450 ROC-AUC=0.8048 | VP=36271 FP=19979 FN=9 | n_teste=87472 (ataque 36280)
+2026-11-19 05:03:53 | INFO | [heavy_para_light__DT__original__stateless14] semente 1: P=0.6448 R=0.9997 F1=0.7840 PR-AUC=0.6450 ROC-AUC=0.8048 | VP=36268 FP=19978 FN=12 | n_teste=87472 (ataque 36280)
+2026-11-19 05:04:02 | INFO | [heavy_para_light__DT__smotenc__stateless14] semente 1: P=0.6447 R=0.9996 F1=0.7838 PR-AUC=0.6449 ROC-AUC=0.8049 | VP=36265 FP=19987 FN=15 | n_teste=87472 (ataque 36280)
+2026-11-19 05:04:15 | INFO | [heavy_para_light__RF__original__stateless14] semente 1: P=0.6448 R=0.9993 F1=0.7838 PR-AUC=0.6450 ROC-AUC=0.8048 | VP=36255 FP=19974 FN=25 | n_teste=87472 (ataque 36280)
+2026-11-19 05:04:35 | INFO | [heavy_para_light__RF__smotenc__stateless14] semente 1: P=0.6448 R=0.9998 F1=0.7840 PR-AUC=0.6448 ROC-AUC=0.8047 | VP=36271 FP=19979 FN=9 | n_teste=87472 (ataque 36280)
+2026-11-19 05:04:36 | INFO | [cruzado heavy_para_light] semente 2: teste = 87472 linhas de light (ataque 36280, 41.5%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 3591
+2026-11-19 05:04:36 | INFO | [heavy_para_light__REF__limiar05__stateless14] semente 2: P=0.6448 R=0.9997 F1=0.7840 PR-AUC=0.6451 ROC-AUC=0.8047 | VP=36268 FP=19976 FN=12 | n_teste=87472 (ataque 36280)
+2026-11-19 05:04:36 | INFO | [heavy_para_light__REF__limiarf1__stateless14] semente 2: P=0.6448 R=0.9998 F1=0.7840 PR-AUC=0.6451 ROC-AUC=0.8047 | VP=36271 FP=19981 FN=9 | n_teste=87472 (ataque 36280)
+2026-11-19 05:04:39 | INFO | [heavy_para_light__DT__original__stateless14] semente 2: P=0.6448 R=0.9997 F1=0.7840 PR-AUC=0.6450 ROC-AUC=0.8047 | VP=36268 FP=19976 FN=12 | n_teste=87472 (ataque 36280)
+2026-11-19 05:04:48 | INFO | [heavy_para_light__DT__smotenc__stateless14] semente 2: P=0.6447 R=0.9995 F1=0.7838 PR-AUC=0.6449 ROC-AUC=0.8049 | VP=36263 FP=19985 FN=17 | n_teste=87472 (ataque 36280)
+2026-11-19 05:05:01 | INFO | [heavy_para_light__RF__original__stateless14] semente 2: P=0.6448 R=0.9993 F1=0.7838 PR-AUC=0.6449 ROC-AUC=0.8046 | VP=36254 FP=19975 FN=26 | n_teste=87472 (ataque 36280)
+2026-11-19 05:05:21 | INFO | [heavy_para_light__RF__smotenc__stateless14] semente 2: P=0.6448 R=0.9997 F1=0.7839 PR-AUC=0.6449 ROC-AUC=0.8046 | VP=36268 FP=19979 FN=12 | n_teste=87472 (ataque 36280)
+2026-11-19 05:05:21 | INFO | [cruzado heavy_para_light] semente 3: teste = 87472 linhas de light (ataque 36280, 41.5%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 3490
+2026-11-19 05:05:22 | INFO | [heavy_para_light__REF__limiar05__stateless14] semente 3: P=0.6448 R=0.9996 F1=0.7840 PR-AUC=0.6451 ROC-AUC=0.8048 | VP=36267 FP=19976 FN=13 | n_teste=87472 (ataque 36280)
+2026-11-19 05:05:22 | INFO | [heavy_para_light__REF__limiarf1__stateless14] semente 3: P=0.6448 R=0.9998 F1=0.7840 PR-AUC=0.6451 ROC-AUC=0.8048 | VP=36271 FP=19980 FN=9 | n_teste=87472 (ataque 36280)
+2026-11-19 05:05:25 | INFO | [heavy_para_light__DT__original__stateless14] semente 3: P=0.6448 R=0.9996 F1=0.7839 PR-AUC=0.6450 ROC-AUC=0.8047 | VP=36267 FP=19977 FN=13 | n_teste=87472 (ataque 36280)
+2026-11-19 05:05:34 | INFO | [heavy_para_light__DT__smotenc__stateless14] semente 3: P=0.6447 R=0.9996 F1=0.7839 PR-AUC=0.6453 ROC-AUC=0.8051 | VP=36265 FP=19984 FN=15 | n_teste=87472 (ataque 36280)
+2026-11-19 05:05:47 | INFO | [heavy_para_light__RF__original__stateless14] semente 3: P=0.6448 R=0.9993 F1=0.7838 PR-AUC=0.6450 ROC-AUC=0.8049 | VP=36255 FP=19976 FN=25 | n_teste=87472 (ataque 36280)
+2026-11-19 05:06:08 | INFO | [heavy_para_light__RF__smotenc__stateless14] semente 3: P=0.6448 R=0.9998 F1=0.7840 PR-AUC=0.6450 ROC-AUC=0.8047 | VP=36271 FP=19980 FN=9 | n_teste=87472 (ataque 36280)
+2026-11-19 05:06:08 | INFO | [cruzado heavy_para_light] semente 4: teste = 87472 linhas de light (ataque 36280, 41.5%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 3615
+2026-11-19 05:06:08 | INFO | [heavy_para_light__REF__limiar05__stateless14] semente 4: P=0.6448 R=0.9995 F1=0.7839 PR-AUC=0.6452 ROC-AUC=0.8047 | VP=36263 FP=19976 FN=17 | n_teste=87472 (ataque 36280)
+2026-11-19 05:06:08 | INFO | [heavy_para_light__REF__limiarf1__stateless14] semente 4: P=0.6448 R=0.9997 F1=0.7839 PR-AUC=0.6452 ROC-AUC=0.8047 | VP=36269 FP=19980 FN=11 | n_teste=87472 (ataque 36280)
+2026-11-19 05:06:11 | INFO | [heavy_para_light__DT__original__stateless14] semente 4: P=0.6446 R=0.9996 F1=0.7838 PR-AUC=0.6445 ROC-AUC=0.8044 | VP=36264 FP=19992 FN=16 | n_teste=87472 (ataque 36280)
+2026-11-19 05:06:20 | INFO | [heavy_para_light__DT__smotenc__stateless14] semente 4: P=0.6448 R=0.9996 F1=0.7839 PR-AUC=0.6449 ROC-AUC=0.8047 | VP=36265 FP=19979 FN=15 | n_teste=87472 (ataque 36280)
+2026-11-19 05:06:33 | INFO | [heavy_para_light__RF__original__stateless14] semente 4: P=0.6448 R=0.9993 F1=0.7838 PR-AUC=0.6452 ROC-AUC=0.8047 | VP=36255 FP=19976 FN=25 | n_teste=87472 (ataque 36280)
+2026-11-19 05:06:56 | INFO | [heavy_para_light__RF__smotenc__stateless14] semente 4: P=0.6448 R=0.9997 F1=0.7840 PR-AUC=0.6452 ROC-AUC=0.8046 | VP=36269 FP=19979 FN=11 | n_teste=87472 (ataque 36280)
+2026-11-19 05:06:56 | INFO | [cruzado light_para_heavy] semente 0: teste = 368495 linhas de heavy (ataque 213919, 58.1%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 62046
+2026-11-19 05:06:57 | INFO | [light_para_heavy__REF__limiar05__stateless14] semente 0: P=0.8182 R=0.0001 F1=0.0002 PR-AUC=0.7758 ROC-AUC=0.7996 | VP=18 FP=4 FN=213901 | n_teste=368495 (ataque 213919)
+2026-11-19 05:06:57 | INFO | [light_para_heavy__REF__limiarf1__stateless14] semente 0: P=0.7760 R=0.9972 F1=0.8728 PR-AUC=0.7758 ROC-AUC=0.7996 | VP=213314 FP=61586 FN=605 | n_teste=368495 (ataque 213919)
+2026-11-19 05:06:59 | INFO | [light_para_heavy__DT__original__stateless14] semente 0: P=0.6562 R=0.0001 F1=0.0002 PR-AUC=0.7724 ROC-AUC=0.7956 | VP=21 FP=11 FN=213898 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:06 | INFO | [light_para_heavy__DT__smotenc__stateless14] semente 0: P=0.7524 R=0.9984 F1=0.8581 PR-AUC=0.7751 ROC-AUC=0.7986 | VP=213575 FP=70265 FN=344 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:10 | INFO | [light_para_heavy__RF__original__stateless14] semente 0: P=0.3333 R=0.0000 F1=0.0000 PR-AUC=0.7761 ROC-AUC=0.8001 | VP=1 FP=2 FN=213918 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:20 | INFO | [light_para_heavy__RF__smotenc__stateless14] semente 0: P=0.7761 R=0.9981 F1=0.8732 PR-AUC=0.7761 ROC-AUC=0.8001 | VP=213517 FP=61610 FN=402 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:20 | INFO | [cruzado light_para_heavy] semente 1: teste = 368495 linhas de heavy (ataque 213919, 58.1%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 62008
+2026-11-19 05:07:21 | INFO | [light_para_heavy__REF__limiar05__stateless14] semente 1: P=0.9630 R=0.0001 F1=0.0002 PR-AUC=0.7760 ROC-AUC=0.7995 | VP=26 FP=1 FN=213893 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:21 | INFO | [light_para_heavy__REF__limiarf1__stateless14] semente 1: P=0.7760 R=0.9973 F1=0.8728 PR-AUC=0.7760 ROC-AUC=0.7995 | VP=213331 FP=61587 FN=588 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:23 | INFO | [light_para_heavy__DT__original__stateless14] semente 1: P=0.9655 R=0.0001 F1=0.0003 PR-AUC=0.7674 ROC-AUC=0.7934 | VP=28 FP=1 FN=213891 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:30 | INFO | [light_para_heavy__DT__smotenc__stateless14] semente 1: P=0.7736 R=0.9982 F1=0.8717 PR-AUC=0.7693 ROC-AUC=0.7944 | VP=213542 FP=62506 FN=377 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:34 | INFO | [light_para_heavy__RF__original__stateless14] semente 1: P=0.8636 R=0.0001 F1=0.0002 PR-AUC=0.7761 ROC-AUC=0.8001 | VP=19 FP=3 FN=213900 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:44 | INFO | [light_para_heavy__RF__smotenc__stateless14] semente 1: P=0.7761 R=0.9982 F1=0.8732 PR-AUC=0.7760 ROC-AUC=0.7999 | VP=213532 FP=61608 FN=387 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:44 | INFO | [cruzado light_para_heavy] semente 2: teste = 368495 linhas de heavy (ataque 213919, 58.1%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 62064
+2026-11-19 05:07:45 | INFO | [light_para_heavy__REF__limiar05__stateless14] semente 2: P=0.8800 R=0.0001 F1=0.0002 PR-AUC=0.7762 ROC-AUC=0.7999 | VP=22 FP=3 FN=213897 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:45 | INFO | [light_para_heavy__REF__limiarf1__stateless14] semente 2: P=0.7760 R=0.9973 F1=0.8728 PR-AUC=0.7762 ROC-AUC=0.7999 | VP=213334 FP=61582 FN=585 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:47 | INFO | [light_para_heavy__DT__original__stateless14] semente 2: P=0.6000 R=0.0001 F1=0.0001 PR-AUC=0.7750 ROC-AUC=0.7987 | VP=15 FP=10 FN=213904 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:54 | INFO | [light_para_heavy__DT__smotenc__stateless14] semente 2: P=0.7759 R=0.9983 F1=0.8732 PR-AUC=0.7753 ROC-AUC=0.7997 | VP=213554 FP=61664 FN=365 | n_teste=368495 (ataque 213919)
+2026-11-19 05:07:58 | INFO | [light_para_heavy__RF__original__stateless14] semente 2: P=1.0000 R=0.0000 F1=0.0001 PR-AUC=0.7762 ROC-AUC=0.8002 | VP=10 FP=0 FN=213909 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:07 | INFO | [light_para_heavy__RF__smotenc__stateless14] semente 2: P=0.7761 R=0.9982 F1=0.8732 PR-AUC=0.7761 ROC-AUC=0.8000 | VP=213524 FP=61610 FN=395 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:08 | INFO | [cruzado light_para_heavy] semente 3: teste = 368495 linhas de heavy (ataque 213919, 58.1%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 62169
+2026-11-19 05:08:09 | INFO | [light_para_heavy__REF__limiar05__stateless14] semente 3: P=0.9000 R=0.0001 F1=0.0003 PR-AUC=0.7754 ROC-AUC=0.7994 | VP=27 FP=3 FN=213892 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:09 | INFO | [light_para_heavy__REF__limiarf1__stateless14] semente 3: P=0.7760 R=0.9972 F1=0.8728 PR-AUC=0.7754 ROC-AUC=0.7994 | VP=213311 FP=61587 FN=608 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:11 | INFO | [light_para_heavy__DT__original__stateless14] semente 3: P=0.6571 R=0.0001 F1=0.0002 PR-AUC=0.7752 ROC-AUC=0.7994 | VP=23 FP=12 FN=213896 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:17 | INFO | [light_para_heavy__DT__smotenc__stateless14] semente 3: P=0.7760 R=0.9983 F1=0.8732 PR-AUC=0.7755 ROC-AUC=0.7996 | VP=213549 FP=61636 FN=370 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:22 | INFO | [light_para_heavy__RF__original__stateless14] semente 3: P=0.0000 R=0.0000 F1=0.0000 PR-AUC=0.7755 ROC-AUC=0.7997 | VP=0 FP=0 FN=213919 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:32 | INFO | [light_para_heavy__RF__smotenc__stateless14] semente 3: P=0.7761 R=0.9981 F1=0.8732 PR-AUC=0.7755 ROC-AUC=0.7996 | VP=213509 FP=61609 FN=410 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:32 | INFO | [cruzado light_para_heavy] semente 4: teste = 368495 linhas de heavy (ataque 213919, 58.1%), sem ['stateless_features-benign_1.pcap.csv', 'stateless_features-benign_2.pcap.csv'] | linhas com vetor inédito: 62327
+2026-11-19 05:08:33 | INFO | [light_para_heavy__REF__limiar05__stateless14] semente 4: P=0.9000 R=0.0001 F1=0.0003 PR-AUC=0.7759 ROC-AUC=0.7998 | VP=27 FP=3 FN=213892 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:33 | INFO | [light_para_heavy__REF__limiarf1__stateless14] semente 4: P=0.7760 R=0.9967 F1=0.8726 PR-AUC=0.7759 ROC-AUC=0.7998 | VP=213208 FP=61552 FN=711 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:35 | INFO | [light_para_heavy__DT__original__stateless14] semente 4: P=0.6667 R=0.0001 F1=0.0002 PR-AUC=0.7750 ROC-AUC=0.7990 | VP=18 FP=9 FN=213901 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:41 | INFO | [light_para_heavy__DT__smotenc__stateless14] semente 4: P=0.7760 R=0.9983 F1=0.8733 PR-AUC=0.7756 ROC-AUC=0.7998 | VP=213560 FP=61635 FN=359 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:46 | INFO | [light_para_heavy__RF__original__stateless14] semente 4: P=0.8636 R=0.0001 F1=0.0002 PR-AUC=0.7760 ROC-AUC=0.8000 | VP=19 FP=3 FN=213900 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:55 | INFO | [light_para_heavy__RF__smotenc__stateless14] semente 4: P=0.7761 R=0.9981 F1=0.8732 PR-AUC=0.7758 ROC-AUC=0.7999 | VP=213519 FP=61614 FN=400 | n_teste=368495 (ataque 213919)
+2026-11-19 05:08:55 | INFO | [cruzado] concluído em 5.9 min
+2026-11-19 05:08:55 | INFO | Fim. Tempo total: 112.5 min
+2026-11-19 05:08:55 | INFO | Nenhuma falha.

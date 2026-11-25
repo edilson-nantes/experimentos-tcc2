@@ -1,0 +1,20 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Custo computacional (segundos) — Random Forest sem a coluna sld}
+  \label{tab:custo_sem_sld}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccc}
+    \hline
+    Cenário & Configuração & SMOTE-NC (s) & Treino (s) & Predição (s) \\
+    \hline
+    \textit{Light} & \textit{Random Forest} / Original (sem sld) & 0,000 $\pm$ 0,000 & 1,480 $\pm$ 0,020 & 0,120 $\pm$ 0,009 \\
+     & \textit{Random Forest} / SMOTE-NC (sem sld) & 2,249 $\pm$ 0,028 & 2,947 $\pm$ 0,057 & 0,129 $\pm$ 0,012 \\
+    \hline
+    \textit{Heavy} & \textit{Random Forest} / Original (sem sld) & 0,000 $\pm$ 0,000 & 8,070 $\pm$ 0,053 & 0,294 $\pm$ 0,007 \\
+     & \textit{Random Forest} / SMOTE-NC (sem sld) & 3,336 $\pm$ 0,022 & 11,600 $\pm$ 1,066 & 0,313 $\pm$ 0,017 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Tempos com n\_jobs = 6. Fonte: Autoria própria (2026).}
+\end{table}

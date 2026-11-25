@@ -1,0 +1,205 @@
+% Gerado por 08_tabelas_figuras_tcc.py. Requer \usepackage{graphicx}.
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Hiperparâmetros selecionados pelo \textit{Grid Search}}
+  \label{tab:hiperparametros}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccc}
+    \hline
+    Cenário & Configuração & \texttt{max\_depth} & \texttt{min\_samples\_split} & \texttt{n\_estimators} & F1 (validação) & Empates \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 10 & 2 & -- & 0,0003 $\pm$ 0,0006 & 9 \\
+     & Árvore de Decisão / SMOTE-NC & 10 & 2 & -- & 0,3963 $\pm$ 0,0122 & 3 \\
+     & \textit{Random Forest} / Original & 10 & 2 & 50 & 0,0016 $\pm$ 0,0024 & 9 \\
+     & \textit{Random Forest} / SMOTE-NC & 20 & 2 & 50 & 0,4247 $\pm$ 0,0026 & 4 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 20 & 5 & -- & 0,7308 $\pm$ 0,0012 & 2 \\
+     & Árvore de Decisão / SMOTE-NC & 10 & 10 & -- & 0,7401 $\pm$ 0,0111 & 1 \\
+     & \textit{Random Forest} / Original & 10 & 5 & 100 & 0,7537 $\pm$ 0,0009 & 1 \\
+     & \textit{Random Forest} / SMOTE-NC & 20 & 2 & 100 & 0,7538 $\pm$ 0,0010 & 1 \\
+    \hline
+  \end{tabular}}
+  \legend{F1 (validação): média $\pm$ desvio-padrão do \textit{F1-score} da classe de ataque nas 5 dobras da validação cruzada. Empates: número de combinações da grade com o mesmo F1 máximo; nesses casos, o \textit{Grid Search} adota a primeira delas na ordem da grade. Fonte: Autoria própria (2026).}
+\end{table}
+
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Vetores de características por classe}
+  \label{tab:verificacao}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lcc}
+    \hline
+     & \textit{Light} & \textit{Heavy} \\
+    \hline
+    Amostras benignas / de ataque & 281.164 / 42.683 & 402.767 / 251.670 \\
+    Amostras com vetor repetido (duplicatas das 14 características) & 77,6\% & 84,4\% \\
+    Vetores distintos na classe benigna & 72.469 & 102.317 \\
+    Vetores distintos na classe de ataque & 49 & 90 \\
+    Vetores presentes nas duas classes & 42 & 77 \\
+    Amostras de ataque cujo vetor também aparece como benigno & 42.672 (100,0\%) & 251.627 (100,0\%) \\
+    Amostras benignas cujo vetor também aparece como ataque & 114.465 (40,7\%) & 163.567 (40,6\%) \\
+    \hline
+  \end{tabular}}
+  \legend{Fonte: Autoria própria (2026).}
+\end{table}
+
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Métricas de detecção da classe de ataque no conjunto de teste}
+  \label{tab:metricas}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccccc}
+    \hline
+    Cenário & Configuração & Precisão & Sensibilidade & F1 & PR-AUC & ROC-AUC & Acurácia & TFP \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 0,3267 $\pm$ 0,2926 & 0,0001 $\pm$ 0,0001 & 0,0003 $\pm$ 0,0003 & 0,2693 $\pm$ 0,0017 & 0,7944 $\pm$ 0,0014 & 0,8682 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0000 \\
+     & Árvore de Decisão / SMOTE-NC & 0,2700 $\pm$ 0,0030 & 0,9994 $\pm$ 0,0002 & 0,4252 $\pm$ 0,0037 & 0,2696 $\pm$ 0,0016 & 0,7946 $\pm$ 0,0012 & 0,6438 $\pm$ 0,0055 & 0,4102 $\pm$ 0,0064 \\
+     & \textit{Random Forest} / Original & 0,1000 $\pm$ 0,2236 & 0,0000 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0001 & 0,2697 $\pm$ 0,0009 & 0,7948 $\pm$ 0,0006 & 0,8682 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0000 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,2713 $\pm$ 0,0007 & 0,9994 $\pm$ 0,0002 & 0,4268 $\pm$ 0,0009 & 0,2696 $\pm$ 0,0012 & 0,7950 $\pm$ 0,0009 & 0,6462 $\pm$ 0,0013 & 0,4074 $\pm$ 0,0015 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 0,6052 $\pm$ 0,0006 & 0,9996 $\pm$ 0,0001 & 0,7539 $\pm$ 0,0004 & 0,6044 $\pm$ 0,0026 & 0,7957 $\pm$ 0,0013 & 0,7491 $\pm$ 0,0006 & 0,4075 $\pm$ 0,0010 \\
+     & Árvore de Decisão / SMOTE-NC & 0,6059 $\pm$ 0,0010 & 0,9996 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 & 0,6061 $\pm$ 0,0012 & 0,7968 $\pm$ 0,0009 & 0,7498 $\pm$ 0,0011 & 0,4063 $\pm$ 0,0018 \\
+     & \textit{Random Forest} / Original & 0,6059 $\pm$ 0,0010 & 0,9993 $\pm$ 0,0002 & 0,7544 $\pm$ 0,0008 & 0,6065 $\pm$ 0,0016 & 0,7969 $\pm$ 0,0012 & 0,7498 $\pm$ 0,0011 & 0,4061 $\pm$ 0,0018 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,6060 $\pm$ 0,0010 & 0,9998 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 & 0,6064 $\pm$ 0,0010 & 0,7968 $\pm$ 0,0006 & 0,7499 $\pm$ 0,0011 & 0,4063 $\pm$ 0,0018 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. TFP: taxa de falsos positivos. Fonte: Autoria própria (2026).}
+\end{table}
+
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Matriz de confusão média no conjunto de teste}
+  \label{tab:confusao}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccc}
+    \hline
+    Cenário & Configuração & VP & FP & FN & VN \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 1,4 $\pm$ 1,5 & 3,2 $\pm$ 2,3 & 10882,6 $\pm$ 1,5 & 71693,8 $\pm$ 2,3 \\
+     & Árvore de Decisão / SMOTE-NC & 10877,6 $\pm$ 1,9 & 29408,0 $\pm$ 459,0 & 6,4 $\pm$ 1,9 & 42289,0 $\pm$ 459,0 \\
+     & \textit{Random Forest} / Original & 0,2 $\pm$ 0,4 & 0,8 $\pm$ 0,8 & 10883,8 $\pm$ 0,4 & 71696,2 $\pm$ 0,8 \\
+     & \textit{Random Forest} / SMOTE-NC & 10877,6 $\pm$ 2,2 & 29210,4 $\pm$ 104,0 & 6,4 $\pm$ 2,2 & 42486,6 $\pm$ 104,0 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 64151,8 $\pm$ 6,9 & 41852,8 $\pm$ 99,5 & 24,2 $\pm$ 6,9 & 60853,2 $\pm$ 99,5 \\
+     & Árvore de Decisão / SMOTE-NC & 64152,2 $\pm$ 4,8 & 41732,8 $\pm$ 180,5 & 23,8 $\pm$ 4,8 & 60973,2 $\pm$ 180,5 \\
+     & \textit{Random Forest} / Original & 64128,0 $\pm$ 10,1 & 41704,4 $\pm$ 180,9 & 48,0 $\pm$ 10,1 & 61001,6 $\pm$ 180,9 \\
+     & \textit{Random Forest} / SMOTE-NC & 64164,2 $\pm$ 3,9 & 41724,6 $\pm$ 181,5 & 11,8 $\pm$ 3,9 & 60981,4 $\pm$ 181,5 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. VP: verdadeiros positivos; FP: falsos positivos; FN: falsos negativos; VN: verdadeiros negativos. Fonte: Autoria própria (2026).}
+\end{table}
+
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Custo computacional (segundos)}
+  \label{tab:custo}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccc}
+    \hline
+    Cenário & Configuração & SMOTE-NC (s) & Treino (s) & Predição (s) \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & -- & 0,673 $\pm$ 0,045 & 0,144 $\pm$ 0,002 \\
+     & Árvore de Decisão / SMOTE-NC & 4,161 $\pm$ 0,032 & 0,798 $\pm$ 0,022 & 0,144 $\pm$ 0,002 \\
+     & \textit{Random Forest} / Original & -- & 2,112 $\pm$ 0,053 & 0,209 $\pm$ 0,016 \\
+     & \textit{Random Forest} / SMOTE-NC & 4,131 $\pm$ 0,028 & 3,259 $\pm$ 0,106 & 0,224 $\pm$ 0,027 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & -- & 1,700 $\pm$ 0,139 & 0,236 $\pm$ 0,004 \\
+     & Árvore de Decisão / SMOTE-NC & 6,062 $\pm$ 0,020 & 1,446 $\pm$ 0,029 & 0,234 $\pm$ 0,003 \\
+     & \textit{Random Forest} / Original & -- & 10,967 $\pm$ 0,181 & 0,454 $\pm$ 0,006 \\
+     & \textit{Random Forest} / SMOTE-NC & 6,071 $\pm$ 0,019 & 12,355 $\pm$ 1,068 & 0,455 $\pm$ 0,013 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições, com \texttt{n\_jobs} = 6. O tempo de treino não inclui a geração das amostras sintéticas, registrada à parte. A predição corresponde à classificação de todo o conjunto de teste (82.581 amostras no \textit{light} e 166.882 no \textit{heavy}). Fonte: Autoria própria (2026).}
+\end{table}
+
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Linha de referência (tabela de consulta) no conjunto de teste}
+  \label{tab:referencia}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccc}
+    \hline
+    Cenário & Limiar & Precisão & Sensibilidade & F1 & PR-AUC & ROC-AUC \\
+    \hline
+    \textit{Light} & 0,5 & 0,5267 $\pm$ 0,3919 & 0,0001 $\pm$ 0,0001 & 0,0003 $\pm$ 0,0003 & 0,2696 $\pm$ 0,0008 & 0,7949 $\pm$ 0,0006 \\
+     & Ajustado no treino & 0,2715 $\pm$ 0,0007 & 0,9989 $\pm$ 0,0003 & 0,4269 $\pm$ 0,0009 & 0,2696 $\pm$ 0,0008 & 0,7949 $\pm$ 0,0006 \\
+    \hline
+    \textit{Heavy} & 0,5 & 0,6060 $\pm$ 0,0011 & 0,9996 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 & 0,6067 $\pm$ 0,0016 & 0,7970 $\pm$ 0,0011 \\
+     & Ajustado no treino & 0,6059 $\pm$ 0,0010 & 0,9998 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 & 0,6067 $\pm$ 0,0016 & 0,7970 $\pm$ 0,0011 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições, com as mesmas divisões 70/30 e sementes do experimento principal. Fonte: Autoria própria (2026).}
+\end{table}
+
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Divisão aleatória (70/30) e validação por grupos de vetores}
+  \label{tab:divisao_grupo}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccccc}
+    \hline
+    Cenário & Configuração & F1 (aleat.) & F1 (grupo) & PR-AUC (aleat.) & PR-AUC (grupo) & ROC-AUC (aleat.) & ROC-AUC (grupo) \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 0,0003 $\pm$ 0,0003 & 0,0362 $\pm$ 0,0810 & 0,2693 $\pm$ 0,0017 & 0,1826 $\pm$ 0,0201 & 0,7944 $\pm$ 0,0014 & 0,6091 $\pm$ 0,0425 \\
+     & Árvore de Decisão / SMOTE-NC & 0,4252 $\pm$ 0,0037 & 0,3617 $\pm$ 0,0164 & 0,2696 $\pm$ 0,0016 & 0,2086 $\pm$ 0,0095 & 0,7946 $\pm$ 0,0012 & 0,6588 $\pm$ 0,0221 \\
+     & \textit{Random Forest} / Original & 0,0000 $\pm$ 0,0001 & 0,0333 $\pm$ 0,0745 & 0,2697 $\pm$ 0,0009 & 0,2701 $\pm$ 0,0011 & 0,7948 $\pm$ 0,0006 & 0,7934 $\pm$ 0,0022 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,4268 $\pm$ 0,0009 & 0,3300 $\pm$ 0,0326 & 0,2696 $\pm$ 0,0012 & 0,2642 $\pm$ 0,0080 & 0,7950 $\pm$ 0,0009 & 0,7792 $\pm$ 0,0193 \\
+     & Tabela de consulta (limiar do treino) & 0,4269 $\pm$ 0,0009 & 0,0000 $\pm$ 0,0000 & 0,2696 $\pm$ 0,0008 & 0,1288 $\pm$ 0,0000 & 0,7949 $\pm$ 0,0006 & 0,4864 $\pm$ 0,0000 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 0,7539 $\pm$ 0,0004 & 0,7034 $\pm$ 0,0175 & 0,6044 $\pm$ 0,0026 & 0,5886 $\pm$ 0,0130 & 0,7957 $\pm$ 0,0013 & 0,7732 $\pm$ 0,0175 \\
+     & Árvore de Decisão / SMOTE-NC & 0,7545 $\pm$ 0,0008 & 0,6407 $\pm$ 0,0685 & 0,6061 $\pm$ 0,0012 & 0,5878 $\pm$ 0,0127 & 0,7968 $\pm$ 0,0009 & 0,7703 $\pm$ 0,0191 \\
+     & \textit{Random Forest} / Original & 0,7544 $\pm$ 0,0008 & 0,7064 $\pm$ 0,0652 & 0,6065 $\pm$ 0,0016 & 0,6051 $\pm$ 0,0003 & 0,7969 $\pm$ 0,0012 & 0,7956 $\pm$ 0,0005 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,7546 $\pm$ 0,0008 & 0,7384 $\pm$ 0,0007 & 0,6064 $\pm$ 0,0010 & 0,6054 $\pm$ 0,0004 & 0,7968 $\pm$ 0,0006 & 0,7958 $\pm$ 0,0003 \\
+     & Tabela de consulta (limiar do treino) & 0,7546 $\pm$ 0,0008 & 0,0000 $\pm$ 0,0000 & 0,6067 $\pm$ 0,0016 & 0,3775 $\pm$ 0,0000 & 0,7970 $\pm$ 0,0011 & 0,4847 $\pm$ 0,0000 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Divisão aleatória: experimento principal. Por grupo: 3 dobras, sendo o grupo o vetor das 14 características; métricas sobre a predição fora da dobra de toda a base experimental. Fonte: Autoria própria (2026).}
+\end{table}
+
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{\textit{F1-score} da classe de ataque por tratamento de balanceamento e limiar de decisão}
+  \label{tab:balanceamento}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccccc}
+    \hline
+     & & \multicolumn{3}{c}{Limiar 0,5} & \multicolumn{3}{c}{Limiar ajustado no treino} \\
+    Cenário & Modelo & Original & SMOTE-NC & \textit{class\_weight} & Original & SMOTE-NC & \textit{class\_weight} \\
+    \hline
+    \textit{Light} & Árvore de Decisão & 0,0003 & 0,4252 & 0,4266 & 0,4249 & 0,4254 & 0,4267 \\
+     & \textit{Random Forest} & 0,0000 & 0,4268 & 0,4268 & 0,4269 & 0,4269 & 0,4269 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão & 0,7539 & 0,7545 & 0,7546 & 0,7535 & 0,7545 & 0,7546 \\
+     & \textit{Random Forest} & 0,7544 & 0,7546 & 0,7544 & 0,7545 & 0,7546 & 0,7545 \\
+    \hline
+  \end{tabular}}
+  \legend{Média de 5 repetições; os desvios-padrão foram de no máximo 0,0042. As colunas Original e SMOTE-NC com limiar 0,5 correspondem ao experimento principal. Fonte: Autoria própria (2026).}
+\end{table}
+
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{\textit{Random Forest} com e sem a característica \texttt{sld}}
+  \label{tab:sem_sld}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccccc}
+    \hline
+    Cenário & Configuração & F1 (14) & F1 (sem \texttt{sld}) & PR-AUC (14) & PR-AUC (sem \texttt{sld}) & ROC-AUC (14) & ROC-AUC (sem \texttt{sld}) \\
+    \hline
+    \textit{Light} & Original & 0,0000 & 0,0000 & 0,2697 & 0,2694 & 0,7948 & 0,7948 \\
+     & SMOTE-NC & 0,4268 & 0,4268 & 0,2696 & 0,2697 & 0,7950 & 0,7950 \\
+    \hline
+    \textit{Heavy} & Original & 0,7544 & 0,7544 & 0,6065 & 0,6064 & 0,7969 & 0,7969 \\
+     & SMOTE-NC & 0,7546 & 0,7546 & 0,6064 & 0,6064 & 0,7968 & 0,7968 \\
+    \hline
+  \end{tabular}}
+  \legend{Média de 5 repetições, com as mesmas divisões e sementes do experimento principal. Fonte: Autoria própria (2026).}
+\end{table}

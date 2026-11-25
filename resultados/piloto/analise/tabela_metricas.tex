@@ -1,0 +1,16 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Métricas de detecção da classe de ataque no conjunto de teste}
+  \label{tab:metricas}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccccc}
+    \hline
+    Cenário & Configuração & Precisão & Sensibilidade & F1 & PR-AUC & ROC-AUC & Acurácia & TFP \\
+    \hline
+    \textit{Heavy} & \textit{Random Forest} / SMOTE-NC & 0,6076 $\pm$ -- & 0,9999 $\pm$ -- & 0,7559 $\pm$ -- & 0,6081 $\pm$ -- & 0,7979 $\pm$ -- & 0,7516 $\pm$ -- & 0,4035 $\pm$ -- \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão das repetições disponíveis (ver resumo\_metricas.csv). Fonte: Autoria própria (2026).}
+\end{table}

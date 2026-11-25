@@ -1,0 +1,3 @@
+cenario,n_benigno,n_ataque,n_duplicatas_14,pct_duplicatas_14,vetores_benigno,vetores_ataque,vetores_nas_duas_classes,ataque_com_vetor_benigno,pct_ataque_com_vetor_benigno,benigno_com_vetor_ataque,pct_benigno_com_vetor_ataque
+light,281164,42683,251371,77.62029600397719,72469,49,42,42672,99.97422861560808,114465,40.711115221009806
+heavy,402767,251670,552107,84.36365914518892,102317,90,77,251627,99.98291413358764,163567,40.6108246206864

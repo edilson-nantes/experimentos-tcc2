@@ -1,0 +1,16 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Matriz de confusão média no conjunto de teste}
+  \label{tab:confusao}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccc}
+    \hline
+    Cenário & Configuração & VP & FP & FN & VN \\
+    \hline
+    \textit{Heavy} & \textit{Random Forest} / SMOTE-NC & 64168,0 $\pm$ -- & 41446,0 $\pm$ -- & 8,0 $\pm$ -- & 61260,0 $\pm$ -- \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão das repetições disponíveis (ver resumo\_metricas.csv). Fonte: Autoria própria (2026).}
+\end{table}

@@ -1,0 +1,25 @@
+{
+  "n_jobs": 6,
+  "versoes": {
+    "python": "3.13.5",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "imblearn": "0.14.2",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  },
+  "hardware": {
+    "plataforma": "Linux-6.12.116+deb13-amd64-x86_64-with-glibc2.41",
+    "maquina": "x86_64",
+    "hostname": "dilso-desktop",
+    "nucleos_logicos": 12,
+    "cpu": "AMD Ryzen 5 2600 Six-Core Processor",
+    "nucleos_fisicos": 6,
+    "ram_gb": 11.6,
+    "lscpu": "Arquitetura:                               x86_64\nModo(s) operacional da CPU:                32-bit, 64-bit\nTamanhos de endereço:                      43 bits physical, 48 bits virtual\nOrdem dos bytes:                           Little Endian\nCPU(s):                                    12\nLista de CPU(s) on-line:                   0-11\nID de fornecedor:                          AuthenticAMD\nNome do modelo:                            AMD Ryzen 5 2600 Six-Core Processor\nFamília da CPU:                            23\nModelo:                                    8\nThread(s) per núcleo:                      2\nNúcleo(s) por soquete:                     6\nSoquete(s):                                1\nStep:                                      2\nAumento de frequência:                     habilitado\nCPU(s) MHz de escala:                      76%\nCPU MHz máx.:                              3400,0000\nCPU MHz mín.:                              1550,0000\nBogoMIPS:                                  6787,38\nOpções:                                    fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es\nVirtualização:                             AMD-V\ncache de L1d:                              192 KiB (6 instâncias)\ncache de L1i:                              384 KiB (6 instâncias)\ncache de L2:                               3 MiB (6 instâncias)\ncache de L3:                               16 MiB (2 instâncias)\nNó(s) de NUMA:                             1\nCPU(s) de nó0 NUMA:                        0-11\nVulnerabilidade Gather data sampling:      Not affected\nVulnerabilidade Indirect target selection: Not affected\nVulnerabilidade Itlb multihit:             Not affected\nVulnerabilidade L1tf:                      Not affected\nVulnerabilidade Mds:                       Not affected\nVulnerabilidade Meltdown:                  Not affected\nVulnerabilidade Mmio stale data:           Not affected\nVulnerabilidade Reg file data sampling:    Not affected\nVulnerabilidade Retbleed:                  Mitigation; untrained return thunk; SMT vulnerable\nVulnerabilidade Spec rstack overflow:      Mitigation; Safe RET\nVulnerabilidade Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerabilidade Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerabilidade Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerabilidade Srbds:                     Not affected\nVulnerabilidade Tsa:                       Not affected\nVulnerabilidade Tsx async abort:           Not affected\nVulnerabilidade Vmscape:                   Mitigation; IBPB before exit to userspace\n"
+  },
+  "registrado_em": "2026-11-19T02:47:05",
+  "comando": "03_experimento.py --dados dados/CICBellEXFDNS2021.zip --piloto --n-jobs 6"
+}

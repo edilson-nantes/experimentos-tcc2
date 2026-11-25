@@ -1,0 +1,21 @@
+% Gerado por 08_tabelas_figuras_tcc.py. Requer \usepackage{graphicx}.
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{\textit{F1-score} da classe de ataque por tratamento de balanceamento e limiar de decisão}
+  \label{tab:balanceamento}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccccc}
+    \hline
+     & & \multicolumn{3}{c}{Limiar 0,5} & \multicolumn{3}{c}{Limiar ajustado no treino} \\
+    Cenário & Modelo & Original & SMOTE-NC & \textit{class\_weight} & Original & SMOTE-NC & \textit{class\_weight} \\
+    \hline
+    \textit{Light} & Árvore de Decisão & 0,0003 & 0,4252 & 0,4266 & 0,4249 & 0,4254 & 0,4267 \\
+     & \textit{Random Forest} & 0,0000 & 0,4268 & 0,4268 & 0,4269 & 0,4269 & 0,4269 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão & 0,7539 & 0,7545 & 0,7546 & 0,7535 & 0,7545 & 0,7546 \\
+     & \textit{Random Forest} & 0,7544 & 0,7546 & 0,7544 & 0,7545 & 0,7546 & 0,7545 \\
+    \hline
+  \end{tabular}}
+  \legend{Média de 5 repetições; os desvios-padrão foram de no máximo 0,0042. As colunas Original e SMOTE-NC com limiar 0,5 correspondem ao experimento principal. Fonte: Autoria própria (2026).}
+\end{table}

@@ -1,0 +1,24 @@
+% Gerado por 08_tabelas_figuras_tcc.py. Requer \usepackage{graphicx}.
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Hiperparâmetros selecionados pelo \textit{Grid Search}}
+  \label{tab:hiperparametros}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccccc}
+    \hline
+    Cenário & Configuração & \texttt{max\_depth} & \texttt{min\_samples\_split} & \texttt{n\_estimators} & F1 (validação) & Empates \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 10 & 2 & -- & 0,0003 $\pm$ 0,0006 & 9 \\
+     & Árvore de Decisão / SMOTE-NC & 10 & 2 & -- & 0,3963 $\pm$ 0,0122 & 3 \\
+     & \textit{Random Forest} / Original & 10 & 2 & 50 & 0,0016 $\pm$ 0,0024 & 9 \\
+     & \textit{Random Forest} / SMOTE-NC & 20 & 2 & 50 & 0,4247 $\pm$ 0,0026 & 4 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 20 & 5 & -- & 0,7308 $\pm$ 0,0012 & 2 \\
+     & Árvore de Decisão / SMOTE-NC & 10 & 10 & -- & 0,7401 $\pm$ 0,0111 & 1 \\
+     & \textit{Random Forest} / Original & 10 & 5 & 100 & 0,7537 $\pm$ 0,0009 & 1 \\
+     & \textit{Random Forest} / SMOTE-NC & 20 & 2 & 100 & 0,7538 $\pm$ 0,0010 & 1 \\
+    \hline
+  \end{tabular}}
+  \legend{F1 (validação): média $\pm$ desvio-padrão do \textit{F1-score} da classe de ataque nas 5 dobras da validação cruzada. Empates: número de combinações da grade com o mesmo F1 máximo; nesses casos, o \textit{Grid Search} adota a primeira delas na ordem da grade. Fonte: Autoria própria (2026).}
+\end{table}

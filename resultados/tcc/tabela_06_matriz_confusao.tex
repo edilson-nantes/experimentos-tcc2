@@ -1,0 +1,24 @@
+% Gerado por 08_tabelas_figuras_tcc.py. Requer \usepackage{graphicx}.
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Matriz de confusão média no conjunto de teste}
+  \label{tab:confusao}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccc}
+    \hline
+    Cenário & Configuração & VP & FP & FN & VN \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 1,4 $\pm$ 1,5 & 3,2 $\pm$ 2,3 & 10882,6 $\pm$ 1,5 & 71693,8 $\pm$ 2,3 \\
+     & Árvore de Decisão / SMOTE-NC & 10877,6 $\pm$ 1,9 & 29408,0 $\pm$ 459,0 & 6,4 $\pm$ 1,9 & 42289,0 $\pm$ 459,0 \\
+     & \textit{Random Forest} / Original & 0,2 $\pm$ 0,4 & 0,8 $\pm$ 0,8 & 10883,8 $\pm$ 0,4 & 71696,2 $\pm$ 0,8 \\
+     & \textit{Random Forest} / SMOTE-NC & 10877,6 $\pm$ 2,2 & 29210,4 $\pm$ 104,0 & 6,4 $\pm$ 2,2 & 42486,6 $\pm$ 104,0 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 64151,8 $\pm$ 6,9 & 41852,8 $\pm$ 99,5 & 24,2 $\pm$ 6,9 & 60853,2 $\pm$ 99,5 \\
+     & Árvore de Decisão / SMOTE-NC & 64152,2 $\pm$ 4,8 & 41732,8 $\pm$ 180,5 & 23,8 $\pm$ 4,8 & 60973,2 $\pm$ 180,5 \\
+     & \textit{Random Forest} / Original & 64128,0 $\pm$ 10,1 & 41704,4 $\pm$ 180,9 & 48,0 $\pm$ 10,1 & 61001,6 $\pm$ 180,9 \\
+     & \textit{Random Forest} / SMOTE-NC & 64164,2 $\pm$ 3,9 & 41724,6 $\pm$ 181,5 & 11,8 $\pm$ 3,9 & 60981,4 $\pm$ 181,5 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. VP: verdadeiros positivos; FP: falsos positivos; FN: falsos negativos; VN: verdadeiros negativos. Fonte: Autoria própria (2026).}
+\end{table}

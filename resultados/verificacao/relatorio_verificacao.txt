@@ -1,0 +1,180 @@
+RELATÓRIO DE VERIFICAÇÃO DOS DADOS — CIC-Bell-DNS-EXF-2021 (stateless)
+Gerado em 2026-11-25T14:31:00 | dados: CICBellEXFDNS2021.zip
+
+1. ARQUIVOS, COLUNAS E TIPOS
+----------------------------------------------------------------------
+  stateless_features-benign_1.pcap.csv               132499 linhas  cenário=light+heavy classe=benigno
+  stateless_features-benign_2.pcap.csv                88574 linhas  cenário=light+heavy classe=benigno
+  stateless_features-benign_heavy_1.pcap.csv          61567 linhas  cenário=heavy       classe=benigno
+  stateless_features-benign_heavy_2.pcap.csv          49115 linhas  cenário=heavy       classe=benigno
+  stateless_features-benign_heavy_3.pcap.csv          71012 linhas  cenário=heavy       classe=benigno
+  stateless_features-heavy_audio.pcap.csv             35795 linhas  cenário=heavy       classe=ataque
+  stateless_features-heavy_compressed.pcap.csv        35746 linhas  cenário=heavy       classe=ataque
+  stateless_features-heavy_exe.pcap.csv               34629 linhas  cenário=heavy       classe=ataque
+  stateless_features-heavy_image.pcap.csv             36386 linhas  cenário=heavy       classe=ataque
+  stateless_features-heavy_text.pcap.csv              71102 linhas  cenário=heavy       classe=ataque
+  stateless_features-heavy_video.pcap.csv             38012 linhas  cenário=heavy       classe=ataque
+  stateless_features-light_audio.pcap.csv             17618 linhas  cenário=light       classe=ataque
+  stateless_features-light_benign.pcap.csv            60091 linhas  cenário=light       classe=benigno
+  stateless_features-light_compressed.pcap.csv        10241 linhas  cenário=light       classe=ataque
+  stateless_features-light_exe.pcap.csv                6450 linhas  cenário=light       classe=ataque
+  stateless_features-light_image.pcap.csv               524 linhas  cenário=light       classe=ataque
+  stateless_features-light_text.pcap.csv               3479 linhas  cenário=light       classe=ataque
+  stateless_features-light_video.pcap.csv              4371 linhas  cenário=light       classe=ataque
+
+  Colunas além de 'timestamp': 14 — FQDN_count, subdomain_length, upper, lower, numeric, entropy, special, labels, labels_max, labels_average, longest_word, sld, len, subdomain
+  Colunas textuais detectadas: ['longest_word', 'sld']
+  Esperado: ['longest_word', 'sld'] -> OK
+  Rótulo: não há coluna de classe nos CSVs; a classe vem da pasta/arquivo
+  (Attacks = ataque, Benign = benigno). Cada arquivo tem uma única classe.
+
+2. CONTAGENS POR CENÁRIO E CLASSE (comparação com a Tabela 1)
+----------------------------------------------------------------------
+  Cenário    Benigno    Ataque     Total  Ataque%  Tabela 1
+  light       281164     42683    323847    13.2%  OK
+  heavy       402767    251670    654437    38.5%  OK
+  Obs.: benign_1 e benign_2 (Benign.zip na raiz da pasta CSV) entram nos
+  dois cenários; só assim as contagens coincidem com a Tabela 1.
+
+  Linhas de ataque por tipo de arquivo:
+    light: audio=17618, compressed=10241, exe=6450, image=524, text=3479, video=4371
+    heavy: audio=35795, compressed=35746, exe=34629, image=36386, text=71102, video=38012
+
+3. VALORES AUSENTES
+----------------------------------------------------------------------
+  Leitura padrão do pandas (pd.read_csv sem opções): {'longest_word': 31}
+  Leitura usada no experimento (keep_default_na=False): nenhum
+  Os 'ausentes' da leitura padrão são as palavras literais 'nan'/'null'
+  em longest_word (ex.: domínios nanit, nullpk), que o pandas converte
+  em NaN. Não são valores ausentes de verdade; o experimento os mantém
+  como texto. A substituição por zero (Cap. 3) continua no código, mas
+  não altera nenhuma linha.
+
+4. DUPLICATAS E VETORES PRESENTES NAS DUAS CLASSES
+----------------------------------------------------------------------
+  'Vetor' = valores das 14 características (sem timestamp). Pela metodologia,
+  duplicatas NÃO são removidas; os números abaixo servem para interpretação.
+  [light] linhas: 323847
+    duplicatas exatas incluindo timestamp: 91 (0.0%)
+    duplicatas das 14 características:      251371 (77.6%)
+    vetores distintos: benigno=72469, ataque=49, nas duas classes=42
+    linhas de ATAQUE cujo vetor também aparece como benigno: 42672 de 42683 (100.0%)
+    linhas BENIGNAS cujo vetor também aparece como ataque:   114465 de 281164 (40.7%)
+    TETO com as 14 características (regra 'classe majoritária de cada
+    vetor', nos próprios dados): precisão=0.9333 recall=0.0003 F1=0.0007 acurácia=0.8682
+    vetores de ataque mais frequentes (contagem):
+        15360  sld='224' longest_word='4' FQDN_count=24 subdomain_length=7 entropy=2.054
+         8835  sld='192' longest_word='2' FQDN_count=27 subdomain_length=10 entropy=2.570
+         5155  sld='192' longest_word='2' FQDN_count=27 subdomain_length=10 entropy=2.767
+         4756  sld='192' longest_word='2' FQDN_count=26 subdomain_length=9 entropy=2.742
+         3309  sld='192' longest_word='2' FQDN_count=25 subdomain_length=8 entropy=2.557
+  [heavy] linhas: 654437
+    duplicatas exatas incluindo timestamp: 508 (0.1%)
+    duplicatas das 14 características:      552107 (84.4%)
+    vetores distintos: benigno=102317, ataque=90, nas duas classes=77
+    linhas de ATAQUE cujo vetor também aparece como benigno: 251627 de 251670 (100.0%)
+    linhas BENIGNAS cujo vetor também aparece como ataque:   163567 de 402767 (40.6%)
+    TETO com as 14 características (regra 'classe majoritária de cada
+    vetor', nos próprios dados): precisão=0.6062 recall=0.9997 F1=0.7548 acurácia=0.7502
+    vetores de ataque mais frequentes (contagem):
+        91490  sld='224' longest_word='4' FQDN_count=24 subdomain_length=7 entropy=2.054
+        51040  sld='192' longest_word='2' FQDN_count=27 subdomain_length=10 entropy=2.570
+        30102  sld='192' longest_word='2' FQDN_count=27 subdomain_length=10 entropy=2.767
+        28006  sld='192' longest_word='2' FQDN_count=26 subdomain_length=9 entropy=2.742
+        19586  sld='192' longest_word='2' FQDN_count=25 subdomain_length=8 entropy=2.557
+
+5. TABULAÇÃO CRUZADA sld x CLASSE
+----------------------------------------------------------------------
+  [light] valores distintos de sld: 47548
+    só benigno: 47524 | só ataque: 2 | nas duas: 22
+    linhas de ataque com sld exclusivo de ataque: 5 de 42683 (0.01%)
+    regra só com sld (classe majoritária de cada valor): precisão=1.0000 recall=0.0001 F1=0.0002
+    sld mais frequentes no ataque (benigno / ataque):
+      192                                         64956 /    24272
+      224                                         41257 /    15360
+      FHEPFCELEHFCEPFFFACACACACACACABN             2555 /      992
+      DESKTOP-3JF04TC                              1221 /      429
+      239                                          1130 /      418
+      local                                        1130 /      358
+      FHEPFCELEHFCEPFFFACACACACACACABL              841 /      315
+      DC                                            600 /      216
+      172                                           258 /       96
+      EJFDEBFEEBFACACACACACACACACACAAA              171 /       72
+  [heavy] valores distintos de sld: 67627
+    só benigno: 67593 | só ataque: 2 | nas duas: 32
+    linhas de ataque com sld exclusivo de ataque: 17 de 251670 (0.01%)
+    regra só com sld (classe majoritária de cada valor): precisão=0.6060 recall=0.9997 F1=0.7546
+    sld mais frequentes no ataque (benigno / ataque):
+      192                                         92402 /   141691
+      224                                         59280 /    91492
+      FHEPFCELEHFCEPFFFACACACACACACABN             3689 /     5846
+      DESKTOP-3JF04TC                              1681 /     2573
+      239                                          1613 /     2476
+      local                                        1532 /     2220
+      FHEPFCELEHFCEPFFFACACACACACACABL             1196 /     1838
+      DC                                            864 /     1320
+      172                                           358 /      550
+      microsoft                                     276 /      384
+
+6. TABULAÇÃO CRUZADA longest_word x CLASSE
+----------------------------------------------------------------------
+  [light] valores distintos de longest_word: 14776
+    só benigno: 14755 | só ataque: 1 | nas duas: 20
+    linhas de ataque com longest_word exclusivo de ataque: 1 de 42683 (0.00%)
+    regra só com longest_word (classe majoritária de cada valor): precisão=1.0000 recall=0.0000 F1=0.0000
+    longest_word mais frequentes no ataque (benigno / ataque):
+      2                                           65338 /    24368
+      4                                           41366 /    15360
+      N                                            2555 /      992
+      C                                            1821 /      645
+      9                                            1242 /      418
+      local                                        1164 /      358
+      L                                             841 /      315
+      A                                             298 /       87
+      microsoft                                     184 /       55
+      tap                                           134 /       48
+  [heavy] valores distintos de longest_word: 18003
+    só benigno: 17976 | só ataque: 0 | nas duas: 27
+    linhas de ataque com longest_word exclusivo de ataque: 0 de 251670 (0.00%)
+    regra só com longest_word (classe majoritária de cada valor): precisão=0.6051 recall=0.9990 F1=0.7537
+    longest_word mais frequentes no ataque (benigno / ataque):
+      2                                           92910 /   142241
+      4                                           59421 /    91492
+      N                                            3689 /     5846
+      C                                            2545 /     3893
+      9                                            1731 /     2476
+      local                                        1577 /     2220
+      L                                            1196 /     1838
+      A                                             371 /      530
+      microsoft                                     291 /      384
+      tap                                           206 /      246
+
+7. TIPOS APÓS A LEITURA USADA NO EXPERIMENTO
+----------------------------------------------------------------------
+  FQDN_count         int64
+  subdomain_length   int64
+  upper              int64
+  lower              int64
+  numeric            int64
+  entropy            float64
+  special            int64
+  labels             int64
+  labels_max         int64
+  labels_average     float64
+  longest_word       str
+  sld                str
+  len                int64
+  subdomain          int64
+
+8. IMPRESSÃO DIGITAL DOS DADOS (SHA-256 das 14 características + classe)
+----------------------------------------------------------------------
+  light: dce5ded4bda44e7f970fb830c10ec8a74b7185368dcf039cb73df5dc4ed0f25d
+  heavy: f91a5998542129f50ed0458a60e38a5cde31e3288c6e5b9ea1ac719d5cd24fc0
+
+RESUMO
+----------------------------------------------------------------------
+  light: F1 máximo atingível com as 14 características ≈ 0.001 (precisão 0.933, recall 0.000)
+  heavy: F1 máximo atingível com as 14 características ≈ 0.755 (precisão 0.606, recall 1.000)
+  ALERTA: há vetores idênticos rotulados como ataque e como benigno em
+  grande proporção. Nenhum modelo que use só estas 14 características
+  passa do teto acima. Discuta com o orientador antes da redação.

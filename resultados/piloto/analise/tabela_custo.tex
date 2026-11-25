@@ -1,0 +1,16 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Custo computacional (segundos)}
+  \label{tab:custo}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llccc}
+    \hline
+    Cenário & Configuração & SMOTE-NC (s) & Treino (s) & Predição (s) \\
+    \hline
+    \textit{Heavy} & \textit{Random Forest} / SMOTE-NC & 6,276 $\pm$ -- & 12,358 $\pm$ -- & 0,458 $\pm$ -- \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão das repetições disponíveis (ver resumo\_metricas.csv). Tempos com n\_jobs = 6. Fonte: Autoria própria (2026).}
+\end{table}

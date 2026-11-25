@@ -1,0 +1,15 @@
+# Ambiente Python local (recriar com: python3 -m venv .venv && pip install -r requirements.txt)
+.venv/
+__pycache__/
+*.pyc
+
+# Conjunto de dados CIC-Bell-DNS-EXF-2021: não é redistribuído aqui.
+# Baixe do Canadian Institute for Cybersecurity e coloque em dados/ (ver README.md).
+dados/
+*.zip
+
+# Saída do teste rápido (--teste-rapido), usada só para conferir o código
+resultados_teste/
+
+# Arquivos temporários gravados durante a escrita atômica
+*.tmp

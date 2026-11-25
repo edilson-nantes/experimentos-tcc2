@@ -1,0 +1,15 @@
+id_config,semente,caracteristica,importancia
+heavy__DT__smotenc__stateless14,4,longest_word,0.9525010250056886
+heavy__DT__smotenc__stateless14,4,sld,0.004701197456043781
+heavy__DT__smotenc__stateless14,4,FQDN_count,0.0003283363520621874
+heavy__DT__smotenc__stateless14,4,subdomain_length,0.029047749403212433
+heavy__DT__smotenc__stateless14,4,upper,0.0
+heavy__DT__smotenc__stateless14,4,lower,0.000424127619070483
+heavy__DT__smotenc__stateless14,4,numeric,3.423314320339796e-05
+heavy__DT__smotenc__stateless14,4,entropy,0.0008106827833897183
+heavy__DT__smotenc__stateless14,4,special,0.009057265921029942
+heavy__DT__smotenc__stateless14,4,labels,0.00035819532460862704
+heavy__DT__smotenc__stateless14,4,labels_max,0.00010869851141396003
+heavy__DT__smotenc__stateless14,4,labels_average,0.002196594994445675
+heavy__DT__smotenc__stateless14,4,len,0.00043189348583128826
+heavy__DT__smotenc__stateless14,4,subdomain,0.0

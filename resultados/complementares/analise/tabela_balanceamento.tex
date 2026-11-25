@@ -1,0 +1,40 @@
+% Requer \usepackage{graphicx} (\resizebox)
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Balanceamento por SMOTE-NC, por pesos de classe e por ajuste do limiar}
+  \label{tab:balanceamento}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lllcccccc}
+    \hline
+    Cenário & Modelo & Balanceamento & Precisão & Sensibilidade & F1 & PR-AUC & TFP & Limiar \\
+    \hline
+    \textit{Light} & Árvore de Decisão & Original & 0,3267 $\pm$ 0,2926 & 0,0001 $\pm$ 0,0001 & 0,0003 $\pm$ 0,0003 & 0,2693 $\pm$ 0,0017 & 0,0000 $\pm$ 0,0000 & 0,5 \\
+     & Árvore de Decisão & SMOTE-NC & 0,2700 $\pm$ 0,0030 & 0,9994 $\pm$ 0,0002 & 0,4252 $\pm$ 0,0037 & 0,2696 $\pm$ 0,0016 & 0,4102 $\pm$ 0,0064 & 0,5 \\
+     & Árvore de Decisão & \textit{class\_weight} & 0,2712 $\pm$ 0,0008 & 0,9996 $\pm$ 0,0001 & 0,4266 $\pm$ 0,0009 & 0,2695 $\pm$ 0,0013 & 0,4079 $\pm$ 0,0016 & 0,5 \\
+     & Árvore de Decisão & Original & 0,2702 $\pm$ 0,0025 & 0,9931 $\pm$ 0,0133 & 0,4249 $\pm$ 0,0042 & 0,2693 $\pm$ 0,0017 & 0,4071 $\pm$ 0,0012 & 0,2104 $\pm$ 0,0351 \\
+     & Árvore de Decisão & SMOTE-NC & 0,2705 $\pm$ 0,0023 & 0,9951 $\pm$ 0,0080 & 0,4254 $\pm$ 0,0036 & 0,2696 $\pm$ 0,0016 & 0,4074 $\pm$ 0,0017 & 0,6352 $\pm$ 0,0438 \\
+     & Árvore de Decisão & \textit{class\_weight} & 0,2713 $\pm$ 0,0008 & 0,9990 $\pm$ 0,0002 & 0,4267 $\pm$ 0,0010 & 0,2695 $\pm$ 0,0013 & 0,4074 $\pm$ 0,0016 & 0,6153 $\pm$ 0,0306 \\
+     & \textit{Random Forest} & Original & 0,1000 $\pm$ 0,2236 & 0,0000 $\pm$ 0,0000 & 0,0000 $\pm$ 0,0001 & 0,2697 $\pm$ 0,0009 & 0,0000 $\pm$ 0,0000 & 0,5 \\
+     & \textit{Random Forest} & SMOTE-NC & 0,2713 $\pm$ 0,0007 & 0,9994 $\pm$ 0,0002 & 0,4268 $\pm$ 0,0009 & 0,2696 $\pm$ 0,0012 & 0,4074 $\pm$ 0,0015 & 0,5 \\
+     & \textit{Random Forest} & \textit{class\_weight} & 0,2714 $\pm$ 0,0007 & 0,9994 $\pm$ 0,0002 & 0,4268 $\pm$ 0,0009 & 0,2693 $\pm$ 0,0009 & 0,4074 $\pm$ 0,0015 & 0,5 \\
+     & \textit{Random Forest} & Original & 0,2715 $\pm$ 0,0007 & 0,9990 $\pm$ 0,0002 & 0,4269 $\pm$ 0,0009 & 0,2697 $\pm$ 0,0009 & 0,4070 $\pm$ 0,0016 & 0,1834 $\pm$ 0,0158 \\
+     & \textit{Random Forest} & SMOTE-NC & 0,2714 $\pm$ 0,0007 & 0,9991 $\pm$ 0,0005 & 0,4269 $\pm$ 0,0009 & 0,2696 $\pm$ 0,0012 & 0,4071 $\pm$ 0,0016 & 0,4408 $\pm$ 0,2249 \\
+     & \textit{Random Forest} & \textit{class\_weight} & 0,2715 $\pm$ 0,0008 & 0,9990 $\pm$ 0,0004 & 0,4269 $\pm$ 0,0009 & 0,2693 $\pm$ 0,0009 & 0,4070 $\pm$ 0,0017 & 0,5372 $\pm$ 0,1642 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão & Original & 0,6052 $\pm$ 0,0006 & 0,9996 $\pm$ 0,0001 & 0,7539 $\pm$ 0,0004 & 0,6044 $\pm$ 0,0026 & 0,4075 $\pm$ 0,0010 & 0,5 \\
+     & Árvore de Decisão & SMOTE-NC & 0,6059 $\pm$ 0,0010 & 0,9996 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 & 0,6061 $\pm$ 0,0012 & 0,4063 $\pm$ 0,0018 & 0,5 \\
+     & Árvore de Decisão & \textit{class\_weight} & 0,6059 $\pm$ 0,0010 & 0,9998 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 & 0,6065 $\pm$ 0,0015 & 0,4064 $\pm$ 0,0017 & 0,5 \\
+     & Árvore de Decisão & Original & 0,6046 $\pm$ 0,0011 & 0,9998 $\pm$ 0,0002 & 0,7535 $\pm$ 0,0008 & 0,6044 $\pm$ 0,0026 & 0,4086 $\pm$ 0,0019 & 0,3096 $\pm$ 0,1286 \\
+     & Árvore de Decisão & SMOTE-NC & 0,6059 $\pm$ 0,0010 & 0,9997 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 & 0,6061 $\pm$ 0,0012 & 0,4064 $\pm$ 0,0018 & 0,4411 $\pm$ 0,0742 \\
+     & Árvore de Decisão & \textit{class\_weight} & 0,6059 $\pm$ 0,0010 & 0,9999 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 & 0,6065 $\pm$ 0,0015 & 0,4064 $\pm$ 0,0017 & 0,3830 $\pm$ 0,0952 \\
+     & \textit{Random Forest} & Original & 0,6059 $\pm$ 0,0010 & 0,9993 $\pm$ 0,0002 & 0,7544 $\pm$ 0,0008 & 0,6065 $\pm$ 0,0016 & 0,4061 $\pm$ 0,0018 & 0,5 \\
+     & \textit{Random Forest} & SMOTE-NC & 0,6060 $\pm$ 0,0010 & 0,9998 $\pm$ 0,0001 & 0,7546 $\pm$ 0,0008 & 0,6064 $\pm$ 0,0010 & 0,4063 $\pm$ 0,0018 & 0,5 \\
+     & \textit{Random Forest} & \textit{class\_weight} & 0,6059 $\pm$ 0,0010 & 0,9994 $\pm$ 0,0002 & 0,7544 $\pm$ 0,0008 & 0,6064 $\pm$ 0,0016 & 0,4062 $\pm$ 0,0018 & 0,5 \\
+     & \textit{Random Forest} & Original & 0,6059 $\pm$ 0,0010 & 0,9996 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 & 0,6065 $\pm$ 0,0016 & 0,4063 $\pm$ 0,0018 & 0,2776 $\pm$ 0,0472 \\
+     & \textit{Random Forest} & SMOTE-NC & 0,6059 $\pm$ 0,0010 & 0,9999 $\pm$ 0,0000 & 0,7546 $\pm$ 0,0008 & 0,6064 $\pm$ 0,0010 & 0,4063 $\pm$ 0,0017 & 0,3553 $\pm$ 0,0558 \\
+     & \textit{Random Forest} & \textit{class\_weight} & 0,6059 $\pm$ 0,0010 & 0,9996 $\pm$ 0,0001 & 0,7545 $\pm$ 0,0008 & 0,6064 $\pm$ 0,0016 & 0,4063 $\pm$ 0,0018 & 0,3227 $\pm$ 0,0743 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Linhas Original e SMOTE-NC com limiar 0,5: experimento principal. \textit{class\_weight} = `balanced' (pesos inversamente proporcionais às classes), com os hiperparâmetros da configuração Original. Limiar ajustado: o de maior F1 na predição fora da dobra de uma validação cruzada estratificada de 5 dobras no treino (o teste não é usado); limiar 0,5 = predição padrão do classificador. Fonte: Autoria própria (2026).}
+\end{table}

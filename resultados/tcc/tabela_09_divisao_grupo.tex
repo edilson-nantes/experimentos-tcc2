@@ -1,0 +1,26 @@
+% Gerado por 08_tabelas_figuras_tcc.py. Requer \usepackage{graphicx}.
+\begin{table}[htb]
+  \centering
+  \small
+  \caption{Divisão aleatória (70/30) e validação por grupos de vetores}
+  \label{tab:divisao_grupo}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llcccccc}
+    \hline
+    Cenário & Configuração & F1 (aleat.) & F1 (grupo) & PR-AUC (aleat.) & PR-AUC (grupo) & ROC-AUC (aleat.) & ROC-AUC (grupo) \\
+    \hline
+    \textit{Light} & Árvore de Decisão / Original & 0,0003 $\pm$ 0,0003 & 0,0362 $\pm$ 0,0810 & 0,2693 $\pm$ 0,0017 & 0,1826 $\pm$ 0,0201 & 0,7944 $\pm$ 0,0014 & 0,6091 $\pm$ 0,0425 \\
+     & Árvore de Decisão / SMOTE-NC & 0,4252 $\pm$ 0,0037 & 0,3617 $\pm$ 0,0164 & 0,2696 $\pm$ 0,0016 & 0,2086 $\pm$ 0,0095 & 0,7946 $\pm$ 0,0012 & 0,6588 $\pm$ 0,0221 \\
+     & \textit{Random Forest} / Original & 0,0000 $\pm$ 0,0001 & 0,0333 $\pm$ 0,0745 & 0,2697 $\pm$ 0,0009 & 0,2701 $\pm$ 0,0011 & 0,7948 $\pm$ 0,0006 & 0,7934 $\pm$ 0,0022 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,4268 $\pm$ 0,0009 & 0,3300 $\pm$ 0,0326 & 0,2696 $\pm$ 0,0012 & 0,2642 $\pm$ 0,0080 & 0,7950 $\pm$ 0,0009 & 0,7792 $\pm$ 0,0193 \\
+     & Tabela de consulta (limiar do treino) & 0,4269 $\pm$ 0,0009 & 0,0000 $\pm$ 0,0000 & 0,2696 $\pm$ 0,0008 & 0,1288 $\pm$ 0,0000 & 0,7949 $\pm$ 0,0006 & 0,4864 $\pm$ 0,0000 \\
+    \hline
+    \textit{Heavy} & Árvore de Decisão / Original & 0,7539 $\pm$ 0,0004 & 0,7034 $\pm$ 0,0175 & 0,6044 $\pm$ 0,0026 & 0,5886 $\pm$ 0,0130 & 0,7957 $\pm$ 0,0013 & 0,7732 $\pm$ 0,0175 \\
+     & Árvore de Decisão / SMOTE-NC & 0,7545 $\pm$ 0,0008 & 0,6407 $\pm$ 0,0685 & 0,6061 $\pm$ 0,0012 & 0,5878 $\pm$ 0,0127 & 0,7968 $\pm$ 0,0009 & 0,7703 $\pm$ 0,0191 \\
+     & \textit{Random Forest} / Original & 0,7544 $\pm$ 0,0008 & 0,7064 $\pm$ 0,0652 & 0,6065 $\pm$ 0,0016 & 0,6051 $\pm$ 0,0003 & 0,7969 $\pm$ 0,0012 & 0,7956 $\pm$ 0,0005 \\
+     & \textit{Random Forest} / SMOTE-NC & 0,7546 $\pm$ 0,0008 & 0,7384 $\pm$ 0,0007 & 0,6064 $\pm$ 0,0010 & 0,6054 $\pm$ 0,0004 & 0,7968 $\pm$ 0,0006 & 0,7958 $\pm$ 0,0003 \\
+     & Tabela de consulta (limiar do treino) & 0,7546 $\pm$ 0,0008 & 0,0000 $\pm$ 0,0000 & 0,6067 $\pm$ 0,0016 & 0,3775 $\pm$ 0,0000 & 0,7970 $\pm$ 0,0011 & 0,4847 $\pm$ 0,0000 \\
+    \hline
+  \end{tabular}}
+  \legend{Média $\pm$ desvio-padrão de 5 repetições. Divisão aleatória: experimento principal. Por grupo: 3 dobras, sendo o grupo o vetor das 14 características; métricas sobre a predição fora da dobra de toda a base experimental. Fonte: Autoria própria (2026).}
+\end{table}
